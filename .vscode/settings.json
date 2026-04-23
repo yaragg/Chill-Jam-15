@@ -60,13 +60,12 @@
         "*.asset": "yaml",
         "*.meta": "yaml",
         "*.prefab": "yaml",
-        "*.unity": "yaml"
+        "*.unity": "yaml",
     },
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Chill-Jam-15.slnx",
-    "dotnet.enableWorkspaceBasedDevelopment": false
+    "dotnet.defaultSolution": "Chill Jam 15.slnx"
 }
