@@ -1,58 +1,22 @@
 fileFormatVersion: 2
-guid: 31b2a5b1d3b9231aba887575ed1d3f47
+guid: a4920b92cc967867697ba6fcd726ad60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5865916773783730700
-    second: Spritesheet_TubesX64_Trims_0
+      213: 2977591468954929546
+    second: Spritesheet_PipesX64_Tint_Purple_0
   - first:
-      213: -5523003828410989198
-    second: Spritesheet_TubesX64_Trims_1
+      213: -5970865706314469669
+    second: Spritesheet_PipesX64_Tint_Purple_1
   - first:
-      213: -1259576852247007373
-    second: Spritesheet_TubesX64_Trims_2
+      213: -1235138887064920987
+    second: Spritesheet_PipesX64_Tint_Purple_2
   - first:
-      213: -6064311742827985217
-    second: Spritesheet_TubesX64_Trims_3
+      213: -604839839403290553
+    second: Spritesheet_PipesX64_Tint_Purple_3
   - first:
-      213: -6078556229609458952
-    second: Spritesheet_TubesX64_Trims_4
-  - first:
-      213: 6888531257211316382
-    second: Spritesheet_TubesX64_Trims_5
-  - first:
-      213: 3458805243221377294
-    second: Spritesheet_TubesX64_Trims_6
-  - first:
-      213: 8045371030034582328
-    second: Spritesheet_TubesX64_Trims_7
-  - first:
-      213: -5357566550907047179
-    second: Spritesheet_TubesX64_Trims_8
-  - first:
-      213: 5056323411171607175
-    second: Spritesheet_TubesX64_Trims_9
-  - first:
-      213: 558617281296989603
-    second: Spritesheet_TubesX64_Trims_10
-  - first:
-      213: -2133540368298678653
-    second: Spritesheet_TubesX64_Trims_11
-  - first:
-      213: 7771773533903099989
-    second: Spritesheet_TubesX64_Trims_12
-  - first:
-      213: -5032729173979251981
-    second: Spritesheet_TubesX64_Trims_13
-  - first:
-      213: -62364588306560781
-    second: Spritesheet_TubesX64_Trims_14
-  - first:
-      213: -6253443280881264544
-    second: Spritesheet_TubesX64_Trims_15
-  - first:
-      213: 8612481219038170458
-    second: Spritesheet_TubesX64_Trims_16
+      213: -6725934700645218541
+    second: Spritesheet_PipesX64_Tint_Purple_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -161,7 +125,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Trims_0
+      name: Spritesheet_PipesX64_Tint_Purple_0
       rect:
         serializedVersion: 2
         x: 0
@@ -176,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0a726f0a3ce76150800000000000000
-      internalID: 5865916773783730700
+      spriteID: a89ca414aa7825920800000000000000
+      internalID: 2977591468954929546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Trims_1
+      name: Spritesheet_PipesX64_Tint_Purple_1
       rect:
         serializedVersion: 2
         x: 64
@@ -198,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 275c07ab7495a53b0800000000000000
-      internalID: -5523003828410989198
+      spriteID: bde609d6649332da0800000000000000
+      internalID: -5970865706314469669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Trims_2
+      name: Spritesheet_PipesX64_Tint_Purple_2
       rect:
         serializedVersion: 2
         x: 128
@@ -220,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37f2382c685158ee0800000000000000
-      internalID: -1259576852247007373
+      spriteID: 56c593ce9b7ebdee0800000000000000
+      internalID: -1235138887064920987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Trims_3
+      name: Spritesheet_PipesX64_Tint_Purple_3
       rect:
         serializedVersion: 2
         x: 192
@@ -242,58 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb60289999c37dba0800000000000000
-      internalID: -6064311742827985217
+      spriteID: 740dc52ee5d2b97f0800000000000000
+      internalID: -604839839403290553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Trims_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f2f3e29051a4aba0800000000000000
-      internalID: -6078556229609458952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_TubesX64_Trims_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e9861427eaaf89f50800000000000000
-      internalID: 6888531257211316382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_TubesX64_Trims_6
+      name: Spritesheet_PipesX64_Tint_Purple_4
       rect:
         serializedVersion: 2
         x: 192
@@ -308,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e01087d0b05200030800000000000000
-      internalID: 3458805243221377294
+      spriteID: 3178199760ea8a2a0800000000000000
+      internalID: -6725934700645218541
       vertices: []
       indices: 
       edges: []
@@ -318,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d7c45bb41c28888338b115bc95c4f676
+    spriteID: f4e7dd8ad52932910a2785d45db81204
     internalID: 0
     vertices: []
     indices: 
@@ -330,13 +250,11 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Spritesheet_TubesX64_Trims_0: 5865916773783730700
-      Spritesheet_TubesX64_Trims_1: -5523003828410989198
-      Spritesheet_TubesX64_Trims_2: -1259576852247007373
-      Spritesheet_TubesX64_Trims_3: -6064311742827985217
-      Spritesheet_TubesX64_Trims_4: -6078556229609458952
-      Spritesheet_TubesX64_Trims_5: 6888531257211316382
-      Spritesheet_TubesX64_Trims_6: 3458805243221377294
+      Spritesheet_PipesX64_Tint_Purple_0: 2977591468954929546
+      Spritesheet_PipesX64_Tint_Purple_1: -5970865706314469669
+      Spritesheet_PipesX64_Tint_Purple_2: -1235138887064920987
+      Spritesheet_PipesX64_Tint_Purple_3: -604839839403290553
+      Spritesheet_PipesX64_Tint_Purple_4: -6725934700645218541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

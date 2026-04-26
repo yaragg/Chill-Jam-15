@@ -1,25 +1,22 @@
 fileFormatVersion: 2
-guid: 9a5468624214bd064a4b2336b4c85ef0
+guid: 31604abd85f5f707ca379fcd792d56da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3023045347742650927
-    second: Spritesheet_TubesX64_Outlines_0
+      213: -5353081017345871748
+    second: Spritesheet_PipesX64_Tint_Grey_0
   - first:
-      213: -5138527893386254559
-    second: Spritesheet_TubesX64_Outlines_1
+      213: 3021097156265298012
+    second: Spritesheet_PipesX64_Tint_Grey_1
   - first:
-      213: 6205098874976367418
-    second: Spritesheet_TubesX64_Outlines_2
+      213: -355475087499492126
+    second: Spritesheet_PipesX64_Tint_Grey_2
   - first:
-      213: 831977959754208022
-    second: Spritesheet_TubesX64_Outlines_3
+      213: -8528426176120448897
+    second: Spritesheet_PipesX64_Tint_Grey_3
   - first:
-      213: 2668189523943604771
-    second: Spritesheet_TubesX64_Outlines_4
-  - first:
-      213: -6815831920237076963
-    second: Spritesheet_TubesX64_Outlines_5
+      213: 8832629832294657893
+    second: Spritesheet_PipesX64_Tint_Grey_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,7 +125,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Outlines_0
+      name: Spritesheet_PipesX64_Tint_Grey_0
       rect:
         serializedVersion: 2
         x: 0
@@ -143,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f22191c1ab304f920800000000000000
-      internalID: 3023045347742650927
+      spriteID: c7076333d2906b5b0800000000000000
+      internalID: -5353081017345871748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Outlines_1
+      name: Spritesheet_PipesX64_Tint_Grey_1
       rect:
         serializedVersion: 2
         x: 64
@@ -165,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 127a6462b1840b8b0800000000000000
-      internalID: -5138527893386254559
+      spriteID: c58c22f6bd71de920800000000000000
+      internalID: 3021097156265298012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Outlines_2
+      name: Spritesheet_PipesX64_Tint_Grey_2
       rect:
         serializedVersion: 2
         x: 128
@@ -187,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a33742ffc80fc1650800000000000000
-      internalID: 6205098874976367418
+      spriteID: 2e487139a49111bf0800000000000000
+      internalID: -355475087499492126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Outlines_3
+      name: Spritesheet_PipesX64_Tint_Grey_3
       rect:
         serializedVersion: 2
         x: 192
@@ -209,58 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6139a10eb87cb8b00800000000000000
-      internalID: 831977959754208022
+      spriteID: f78923f0491f4a980800000000000000
+      internalID: -8528426176120448897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Outlines_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 322c3104c30570520800000000000000
-      internalID: 2668189523943604771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_TubesX64_Outlines_5
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d1e1089fafc4961a0800000000000000
-      internalID: -6815831920237076963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheet_TubesX64_Outlines_6
+      name: Spritesheet_PipesX64_Tint_Grey_4
       rect:
         serializedVersion: 2
         x: 192
@@ -273,10 +226,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 106be4545d6be579b8859b7157630bd8
-      internalID: 552103842
+      spriteID: 56fe072090ec39a70800000000000000
+      internalID: 8832629832294657893
       vertices: []
       indices: 
       edges: []
@@ -285,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3cd43a294f28bfb319d68fd724fbd103
+    spriteID: b1f59cce6d1c66e44be6b6e2a662950d
     internalID: 0
     vertices: []
     indices: 
@@ -297,13 +250,11 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Spritesheet_TubesX64_Outlines_0: 3023045347742650927
-      Spritesheet_TubesX64_Outlines_1: -5138527893386254559
-      Spritesheet_TubesX64_Outlines_2: 6205098874976367418
-      Spritesheet_TubesX64_Outlines_3: 831977959754208022
-      Spritesheet_TubesX64_Outlines_4: 2668189523943604771
-      Spritesheet_TubesX64_Outlines_5: -6815831920237076963
-      Spritesheet_TubesX64_Outlines_6: 552103842
+      Spritesheet_PipesX64_Tint_Grey_0: -5353081017345871748
+      Spritesheet_PipesX64_Tint_Grey_1: 3021097156265298012
+      Spritesheet_PipesX64_Tint_Grey_2: -355475087499492126
+      Spritesheet_PipesX64_Tint_Grey_3: -8528426176120448897
+      Spritesheet_PipesX64_Tint_Grey_4: 8832629832294657893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

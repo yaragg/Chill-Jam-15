@@ -1,22 +1,31 @@
 fileFormatVersion: 2
-guid: 14e44c5564b214f48835271968fb7415
+guid: 7431edbf1cfe6ebd780f31c8c9507098
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1484235202372453322
-    second: Spritesheet_TubesX64_Fill_0
+      213: 4130782175738959138
+    second: Spritesheet_PipesX64_Highlights_0
   - first:
-      213: 6223706213595087656
-    second: Spritesheet_TubesX64_Fill_1
+      213: 2841029647364587537
+    second: Spritesheet_PipesX64_Highlights_1
   - first:
-      213: -8610945415378916480
-    second: Spritesheet_TubesX64_Fill_2
+      213: -688515308033535384
+    second: Spritesheet_PipesX64_Highlights_2
   - first:
-      213: 7923579624395664462
-    second: Spritesheet_TubesX64_Fill_3
+      213: 7987211809703027027
+    second: Spritesheet_PipesX64_Highlights_3
   - first:
-      213: 230930282239313144
-    second: Spritesheet_TubesX64_Fill_4
+      213: 1373368094150718103
+    second: Spritesheet_PipesX64_Highlights_4
+  - first:
+      213: -2117394209519679709
+    second: Spritesheet_PipesX64_Highlights_5
+  - first:
+      213: 2768492106528911131
+    second: Spritesheet_PipesX64_Highlights_6
+  - first:
+      213: 143428859742566806
+    second: Spritesheet_PipesX64_Highlights_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,7 +134,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Fill_0
+      name: Spritesheet_PipesX64_Highlights_0
       rect:
         serializedVersion: 2
         x: 0
@@ -140,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 63cb57f72ffe66be0800000000000000
-      internalID: -1484235202372453322
+      spriteID: 2259f65c08c735930800000000000000
+      internalID: 4130782175738959138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Fill_1
+      name: Spritesheet_PipesX64_Highlights_1
       rect:
         serializedVersion: 2
         x: 64
@@ -162,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8230abf93db0f5650800000000000000
-      internalID: 6223706213595087656
+      spriteID: 110058f696d5d6720800000000000000
+      internalID: 2841029647364587537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Fill_2
+      name: Spritesheet_PipesX64_Highlights_2
       rect:
         serializedVersion: 2
         x: 128
@@ -184,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08baf0874c6cf7880800000000000000
-      internalID: -8610945415378916480
+      spriteID: 8621e3aa9f6e176f0800000000000000
+      internalID: -688515308033535384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Fill_3
+      name: Spritesheet_PipesX64_Highlights_3
       rect:
         serializedVersion: 2
         x: 192
@@ -206,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e4c60adffa536fd60800000000000000
-      internalID: 7923579624395664462
+      spriteID: 3516727a2d648de60800000000000000
+      internalID: 7987211809703027027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_TubesX64_Fill_4
+      name: Spritesheet_PipesX64_Highlights_4
       rect:
         serializedVersion: 2
         x: 192
@@ -228,8 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8f441c04edd643300800000000000000
-      internalID: 230930282239313144
+      spriteID: 79275b5510f2f0310800000000000000
+      internalID: 1373368094150718103
       vertices: []
       indices: 
       edges: []
@@ -238,7 +247,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0fd3b219db59c32359de93ecbc57392c
+    spriteID: e478316183c739ac2b3a6ac36db41931
     internalID: 0
     vertices: []
     indices: 
@@ -250,11 +259,11 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Spritesheet_TubesX64_Fill_0: -1484235202372453322
-      Spritesheet_TubesX64_Fill_1: 6223706213595087656
-      Spritesheet_TubesX64_Fill_2: -8610945415378916480
-      Spritesheet_TubesX64_Fill_3: 7923579624395664462
-      Spritesheet_TubesX64_Fill_4: 230930282239313144
+      Spritesheet_PipesX64_Highlights_0: 4130782175738959138
+      Spritesheet_PipesX64_Highlights_1: 2841029647364587537
+      Spritesheet_PipesX64_Highlights_2: -688515308033535384
+      Spritesheet_PipesX64_Highlights_3: 7987211809703027027
+      Spritesheet_PipesX64_Highlights_4: 1373368094150718103
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
