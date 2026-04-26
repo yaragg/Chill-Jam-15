@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 77710cb89fd1d81aa990fa77dfbbd9bf
+guid: 4d94cbba6b8e33399b9910690ce3fbdb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8973316411796931380
-    second: Spritesheet_Hamster_0
+      213: 6561577557190205234
+    second: Spritesheet_Hamster2_0
   - first:
-      213: -6766456311877542310
-    second: Spritesheet_Hamster_1
+      213: -1163144112916229656
+    second: Spritesheet_Hamster2_1
+  - first:
+      213: -3596643692771587188
+    second: Spritesheet_Hamster2_2
+  - first:
+      213: 216701219360132763
+    second: Spritesheet_Hamster2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,45 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spritesheet_Hamster_0
+      name: Spritesheet_Hamster2_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 15
-        width: 33
-        height: 43
+        x: 0
+        y: 192
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 433c65edbbf978c70800000000000000
-      internalID: 8973316411796931380
+      spriteID: 23f5f7606086f0b50800000000000000
+      internalID: 6561577557190205234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_Hamster_1
+      name: Spritesheet_Hamster2_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 15
-        width: 29
-        height: 37
+        x: 48
+        y: 192
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5ed656a5d7b812a0800000000000000
-      internalID: -6766456311877542310
+      spriteID: 8e19a07879eabdfe0800000000000000
+      internalID: -1163144112916229656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Hamster2_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b43b40e97261ec0800000000000000
+      internalID: -3596643692771587188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Hamster2_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9eca526c90e10300800000000000000
+      internalID: 216701219360132763
       vertices: []
       indices: 
       edges: []
@@ -163,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5a244295bf5926409bc4c5aabb101fc0
     internalID: 0
     vertices: []
     indices: 
@@ -171,10 +221,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Spritesheet_Hamster_0: 8973316411796931380
-      Spritesheet_Hamster_1: -6766456311877542310
+      Spritesheet_Hamster2_0: 6561577557190205234
+      Spritesheet_Hamster2_1: -1163144112916229656
+      Spritesheet_Hamster2_2: -3596643692771587188
+      Spritesheet_Hamster2_3: 216701219360132763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
