@@ -521,14 +521,54 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2339943161121338560, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3365017283524205539, guid: bb13f2d63bd8669a9925854555fc8057, type: 3}
+    - target: {fileID: 3258633344132637925, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      propertyPath: 'sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -3365017283524205539, guid: bb13f2d63bd8669a9925854555fc8057, type: 3}
+    - target: {fileID: 3258633344132637925, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      propertyPath: 'sprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1652194608726478048, guid: 6aa8eb16738982cf1b3d07a6d8bc1395, type: 3}
+    - target: {fileID: 3258633344132637925, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      propertyPath: 'sprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: -355475087499492126, guid: 31604abd85f5f707ca379fcd792d56da, type: 3}
+    - target: {fileID: 3258633344132637925, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      propertyPath: 'sprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: -6820218642045207720, guid: 7b19f4cc9214e14708bfd189d2627af4, type: 3}
+    - target: {fileID: 3258633344132637925, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      propertyPath: 'sprites.Array.data[4]'
+      value: 
+      objectReference: {fileID: -8821245421115069884, guid: 744c5dffd95c4497e84f6fe03fd26187, type: 3}
+    - target: {fileID: 3258633344132637925, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      propertyPath: 'sprites.Array.data[5]'
+      value: 
+      objectReference: {fileID: -1235138887064920987, guid: a4920b92cc967867697ba6fcd726ad60, type: 3}
+    - target: {fileID: 3258633344132637925, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      propertyPath: 'sprites.Array.data[6]'
+      value: 
+      objectReference: {fileID: -709378125679469548, guid: 8945be34458dc3480a47f4fc65cf1869, type: 3}
+    - target: {fileID: 3258633344132637925, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      propertyPath: 'sprites.Array.data[7]'
+      value: 
+      objectReference: {fileID: 1636405554367669511, guid: 591e88ea1843c03e1bbf2497ee7be5ca, type: 3}
     - target: {fileID: 3426398422927446132, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 6906577555732033934, guid: 1defd88bf488dd6fabc4c8cbba358628, type: 3}
+      objectReference: {fileID: -4826099306546323641, guid: e628976c60bc0462c964295cce59eb1f, type: 3}
     - target: {fileID: 3645382200437362267, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
       propertyPath: m_Name
-      value: TTube Variant
+      value: TTube
       objectReference: {fileID: 0}
+    - target: {fileID: 3681902169389009040, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -688515308033535384, guid: 7431edbf1cfe6ebd780f31c8c9507098, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
