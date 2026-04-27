@@ -16,6 +16,8 @@ public class Tube : MonoBehaviour
     public SpriteRenderer TubeRenderer;
     [Foldout("Internal Config")]
     public SpriteRenderer MechanicRenderer;
+    [Foldout("Internal Config")]
+    public Transform targetOverride;
 
     public List<Tube> Connections { get; private set; } = new();
 
@@ -68,6 +70,11 @@ public class Tube : MonoBehaviour
                 }
             }
         }
+    }
+
+    public Vector3 GetTargetPoint ()
+    {
+        return targetOverride != null ? targetOverride.position : transform.position;
     }
 
     public enum MechanicType
