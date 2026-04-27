@@ -560,7 +560,7 @@ PrefabInstance:
     - target: {fileID: 3426398422927446132, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -4826099306546323641, guid: e628976c60bc0462c964295cce59eb1f, type: 3}
+      objectReference: {fileID: -409759504, guid: 026322246515e5c47962abfb9b840d6e, type: 3}
     - target: {fileID: 3645382200437362267, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
       propertyPath: m_Name
       value: TTube
