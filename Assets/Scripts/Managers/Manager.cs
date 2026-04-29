@@ -19,6 +19,8 @@ public class Manager : MonoBehaviour
     {
         yield return null;
     }
+
+    public virtual void Reset () {}
 }
 
 public class Manager<T> : Manager where T : Manager

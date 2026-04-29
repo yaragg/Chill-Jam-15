@@ -18,12 +18,20 @@ public class HamsterManager : Manager<HamsterManager>
         Hamsters.Remove(hamster);
     }
 
+    public override void Reset ()
+    {
+        foreach (Hamster hamster in Hamsters)
+        {
+            hamster.Reset();
+        }
+    }
+
     [Button("Animate Hamsters")]
     public void AnimateHamsters ()
     {
         foreach (Hamster hamster in Hamsters)
         {
-            List<Tube> path = TubeManager.Instance.GetPath(start, end);
+            List<Tube> path = TubeManager.Instance.GetPath(hamster.Entrance, TubeManager.Instance.Exit);
             hamster.AnimatePath(path);
         }
     }

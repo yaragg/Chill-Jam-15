@@ -13,7 +13,7 @@ public static class SceneAutoloaderData
         set => EditorPrefs.SetBool(PREF_SHOULD_AUTOLOAD_KEY, value);
         #else
         get => false;
-        set => {};
+        set {}
         #endif
     }
 
@@ -24,7 +24,7 @@ public static class SceneAutoloaderData
         set => EditorPrefs.SetString(PREF_AUTOLOADED_SCENE_KEY, value);
         #else
         get => "";
-        set => {};
+        set {}
         #endif
     }
 
@@ -35,7 +35,7 @@ public static class SceneAutoloaderData
         set => EditorPrefs.SetString(PREF_SAVED_SCENE_KEY, value);
         #else
         get => "";
-        set => {};
+        set {}
         #endif
     }
 }

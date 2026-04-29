@@ -6,7 +6,12 @@ using UnityEngine;
 public class Tube : MonoBehaviour
 {
     [field: SerializeField, OnValueChanged(nameof(UpdateMechanic))]
-    public MechanicType Mechanic { get; private set; }= MechanicType.None;
+    public MechanicType Mechanic { get; private set; } = MechanicType.None;
+    public bool CanBeMoved = true;
+    public bool CanBeRotated = true;
+    public bool IsEntrance = false;
+    public bool IsExit = false;
+
 
     [Foldout("Internal Config")]
     public Sprite AccelerateSprite;
@@ -24,7 +29,7 @@ public class Tube : MonoBehaviour
     private List<Collider2D> _exits = new();
     private ContactFilter2D _filter;
 
-    public void Start ()
+    public void Start()
     {
         _filter = new ContactFilter2D();
         _exits = GetComponentsInChildren<Collider2D>().ToList();
@@ -32,12 +37,12 @@ public class Tube : MonoBehaviour
         TubeManager.Instance.RegisterTube(this);
     }
 
-    private void OnDestroy ()
+    private void OnDestroy()
     {
         TubeManager.Instance.UnregisterTube(this);
     }
 
-    private void UpdateMechanic ()
+    private void UpdateMechanic()
     {
         switch (Mechanic)
         {
@@ -53,7 +58,7 @@ public class Tube : MonoBehaviour
         }
     }
 
-    public void FindConnections ()
+    public void FindConnections()
     {
         Connections.Clear();
         // _filter.SetLayerMask(LayerMask.GetMask("Tube"));
@@ -72,7 +77,7 @@ public class Tube : MonoBehaviour
         }
     }
 
-    public Vector3 GetTargetPoint ()
+    public Vector3 GetTargetPoint()
     {
         return targetOverride != null ? targetOverride.position : transform.position;
     }

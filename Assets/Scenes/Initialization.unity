@@ -151,6 +151,8 @@ MonoBehaviour:
   _managerPrefabs:
   - {fileID: 6441975566498649281, guid: 22131aa8c296ed44083c04d646b88a47, type: 3}
   - {fileID: 6842857834642253660, guid: 869ec0bc621382c4595256a525793dad, type: 3}
+  - {fileID: 6374930193015148719, guid: 6f8c3be737b220c4dafd3c1c60102ff1, type: 3}
+  - {fileID: 7196706060801922133, guid: 162306a0b6fb9644e8f60c17f1dfea82, type: 3}
 --- !u!4 &567365358
 Transform:
   m_ObjectHideFlags: 0
