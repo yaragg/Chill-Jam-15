@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using deVoid.Utils;
 using NaughtyAttributes;
 using UnityEngine;
 
@@ -9,7 +10,6 @@ public class Tube : MonoBehaviour
     public MechanicType Mechanic { get; private set; } = MechanicType.None;
     public bool CanBeMoved = true;
     public bool CanBeRotated = true;
-    public bool IsEntrance = false;
     public bool IsExit = false;
 
 
@@ -28,18 +28,69 @@ public class Tube : MonoBehaviour
 
     private List<Collider2D> _exits = new();
     private ContactFilter2D _filter;
+    private bool _isBeingMoved = false;
+    private Collider2D _tileCollider;
 
     public void Start()
     {
         _filter = new ContactFilter2D();
         _exits = GetComponentsInChildren<Collider2D>().ToList();
+        _tileCollider = GetComponent<Collider2D>();
         UpdateMechanic();
         TubeManager.Instance.RegisterTube(this);
+
+        Signals.Get<TapSignal>().AddListener(HandleTap);
+        Signals.Get<DragSignal>().AddListener(HandleDrag);
     }
 
     private void OnDestroy()
     {
+        Signals.Get<TapSignal>().RemoveListener(HandleTap);
+        Signals.Get<DragSignal>().RemoveListener(HandleDrag);
         TubeManager.Instance.UnregisterTube(this);
+    }
+
+    void Update()
+    {
+        if (_isBeingMoved)
+        {
+            Vector2 mousePos = InputManager.Instance.GetMouseWorldPosition();
+            transform.position = mousePos;
+        }
+    }
+
+    private void HandleTap (Vector2 clickWorldPosition)
+    {
+        if (_tileCollider.OverlapPoint(clickWorldPosition))
+        {
+            if (_isBeingMoved) EndMove();
+            else StartMove();
+        }
+    }
+
+    private void HandleDrag (Vector2 clickWorldPosition, bool isStarting)
+    {
+        if (isStarting)
+        {
+            if (_tileCollider.OverlapPoint(clickWorldPosition))
+            {
+                StartMove();
+            }
+        }
+        else
+        {
+            if (_isBeingMoved) EndMove();
+        }
+    }
+
+    private void StartMove ()
+    {
+        _isBeingMoved = true;
+    }
+
+    private void EndMove ()
+    {
+        _isBeingMoved = false;
     }
 
     private void UpdateMechanic()
