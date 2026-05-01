@@ -2,7 +2,6 @@ using UnityEngine;
 
 class LevelDef : ScriptableObject
 {
-    public string id;
     public GameObject levelPrefab;
     public int numHamsters = 1;
     public int numITubes;

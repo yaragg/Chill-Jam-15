@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7eeb4bb8b0f2db641aff2fde40e77847, type: 3}
-  m_Name: LevelDef
+  m_Name: Level0-1_Rotation_Tutorial
   m_EditorClassIdentifier: Assembly-CSharp::LevelDef
   id: 
-  levelPrefab: {fileID: 0}
+  levelPrefab: {fileID: 2357184467492304762, guid: 62c8fe4104c2e6349a9a602f69df3cc8, type: 3}
   numHamsters: 1
   numITubes: 0
   numLTubes: 0
