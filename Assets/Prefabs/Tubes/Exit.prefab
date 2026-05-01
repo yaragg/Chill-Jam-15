@@ -10,19 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 724059787232560973, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: m_Color.a
-      value: 0.2901961
+      value: 0.27450982
       objectReference: {fileID: 0}
     - target: {fileID: 724059787232560973, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: m_Color.b
-      value: 0.015686275
+      value: 0.004999995
       objectReference: {fileID: 0}
     - target: {fileID: 724059787232560973, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: m_Color.g
-      value: 0.92156863
-      objectReference: {fileID: 0}
-    - target: {fileID: 724059787232560973, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
-      propertyPath: m_Color.r
-      value: 1
+      value: 0.004999995
       objectReference: {fileID: 0}
     - target: {fileID: 724059787232560973, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: m_Enabled
@@ -34,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1663970593800788322, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: m_Name
-      value: Entrance
+      value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 4233763744333605778, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: m_Enabled
@@ -82,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4545282483420089548, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: Type
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4545282483420089548, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: CanBeMoved
@@ -114,14 +110,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1780670418038212107, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3839011622979788192}
+      addedObject: {fileID: 1537371653207283644}
   m_SourcePrefab: {fileID: 100100000, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
 --- !u!1 &1993286889599162904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1780670418038212107, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
   m_PrefabInstance: {fileID: 225080556888955923}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3839011622979788192
+--- !u!114 &1537371653207283644
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

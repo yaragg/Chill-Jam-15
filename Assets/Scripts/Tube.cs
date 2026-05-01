@@ -11,8 +11,9 @@ public class Tube : MonoBehaviour
     public MechanicType Mechanic { get; private set; } = MechanicType.None;
     public bool CanBeMoved = true;
     public bool CanBeRotated = true;
-    public bool IsExit = false;
 
+    [ShowIf("IsRandom")]
+    public List<TubeType> RandomTypes = new List<TubeType>() { TubeType.ITube, TubeType.LTube, TubeType.TTube, TubeType.CrossTube };
 
     [Foldout("Internal Config")]
     public Sprite AccelerateSprite;
@@ -28,19 +29,44 @@ public class Tube : MonoBehaviour
     public TubeType Type;
 
     public List<Tube> Connections { get; private set; } = new();
+    public bool IsExit => Type == TubeType.Exit;
+    public bool IsRandom => Type == TubeType.Random;
 
     private List<Collider2D> _exits = new();
     private ContactFilter2D _filter;
     private bool _isBeingMoved = false;
     private bool _isRotating = false;
     private Collider2D _tileCollider;
+    private List<float> _randomAngles = new List<float>() { 0f, 90f, 180f, 270f };
 
     public void Start()
     {
+        if (Type == TubeType.Random)
+        {
+            RandomizeTile();
+            return;
+        }
+
+        if (CanBeMoved)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        if (CanBeRotated)
+        {
+            float randomAngle = Utils.GetRandomItem(_randomAngles);
+            transform.rotation = Quaternion.Euler(0f, 0f, randomAngle);
+        }
+
         _filter = new ContactFilter2D();
-        _exits = GetComponentsInChildren<Collider2D>().ToList();
+        _filter.SetLayerMask(LayerMask.GetMask("Tube Exits"));
+        _filter.useLayerMask = true;
+
+        _exits = GetComponentsInChildren<Collider2D>().Where(c => c.gameObject.layer == LayerMask.NameToLayer("Tube Exits")).ToList();
         _tileCollider = GetComponent<Collider2D>();
         UpdateMechanic();
+
         TubeManager.Instance.RegisterTube(this);
 
         Signals.Get<TapSignal>().AddListener(HandleTap);
@@ -63,6 +89,16 @@ public class Tube : MonoBehaviour
             Vector2 mousePos = InputManager.Instance.GetMouseWorldPosition();
             transform.position = mousePos;
         }
+    }
+
+    private void RandomizeTile ()
+    {
+        TubeType type = Utils.GetRandomItem(RandomTypes);
+        Tube newTube = TubeManager.Instance.SpawnTubeAt(type, transform.position);
+        newTube.CanBeMoved = CanBeMoved;
+        newTube.CanBeRotated = CanBeRotated;
+
+        Destroy(gameObject);
     }
 
     private void HandleTap (Vector2 clickWorldPosition)
@@ -135,6 +171,7 @@ public class Tube : MonoBehaviour
         {
             List<Collider2D> overlapping = new List<Collider2D>();
             Physics2D.OverlapCollider(exit, _filter, overlapping);
+
             foreach (Collider2D col in overlapping)
             {
                 Tube tube = col.GetComponentInParent<Tube>();
@@ -164,6 +201,9 @@ public class Tube : MonoBehaviour
         ITube,
         LTube,
         TTube,
-        CrossTube
+        CrossTube,
+        Entrance,
+        Exit,
+        Random
     }
 }
