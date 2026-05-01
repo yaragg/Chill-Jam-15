@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using deVoid.Utils;
+using DG.Tweening;
 using NaughtyAttributes;
 using UnityEngine;
 
@@ -23,12 +24,15 @@ public class Tube : MonoBehaviour
     public SpriteRenderer MechanicRenderer;
     [Foldout("Internal Config")]
     public Transform targetOverride;
+    [Foldout("Internal Config")]
+    public TubeType Type;
 
     public List<Tube> Connections { get; private set; } = new();
 
     private List<Collider2D> _exits = new();
     private ContactFilter2D _filter;
     private bool _isBeingMoved = false;
+    private bool _isRotating = false;
     private Collider2D _tileCollider;
 
     public void Start()
@@ -41,12 +45,14 @@ public class Tube : MonoBehaviour
 
         Signals.Get<TapSignal>().AddListener(HandleTap);
         Signals.Get<DragSignal>().AddListener(HandleDrag);
+        Signals.Get<RotateSignal>().AddListener(HandleRotate);
     }
 
     private void OnDestroy()
     {
         Signals.Get<TapSignal>().RemoveListener(HandleTap);
         Signals.Get<DragSignal>().RemoveListener(HandleDrag);
+        Signals.Get<RotateSignal>().RemoveListener(HandleRotate);
         TubeManager.Instance.UnregisterTube(this);
     }
 
@@ -83,14 +89,26 @@ public class Tube : MonoBehaviour
         }
     }
 
-    private void StartMove ()
+    private void HandleRotate (Vector2 clickWorldPosition)
     {
-        _isBeingMoved = true;
+        if (!_isRotating && CanBeRotated && _tileCollider.OverlapPoint(clickWorldPosition))
+        {
+            _isRotating = true;
+            transform.DORotate(new Vector3(0f, 0f, 90f), 0.3f, RotateMode.LocalAxisAdd).SetEase(Ease.InOutQuad).OnComplete(() => _isRotating = false);
+        }
     }
 
-    private void EndMove ()
+    public void StartMove ()
+    {
+        _isBeingMoved = true;
+        transform.position = new Vector3(transform.position.x, transform.position.y, -1f);
+    }
+
+    public void EndMove ()
     {
         _isBeingMoved = false;
+        Vector3 snappedPosition = TubeManager.Instance.TubeGrid.SnapPositionToGrid(transform.position);
+        transform.position = new Vector3(snappedPosition.x, snappedPosition.y, 0f);
     }
 
     private void UpdateMechanic()
@@ -138,5 +156,14 @@ public class Tube : MonoBehaviour
         None,
         Accelerate,
         Decelerate
+    }
+
+    public enum TubeType
+    {
+        None,
+        ITube,
+        LTube,
+        TTube,
+        CrossTube
     }
 }

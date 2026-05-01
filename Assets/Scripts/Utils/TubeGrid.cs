@@ -1,8 +1,7 @@
 using NaughtyAttributes;
 using UnityEngine;
 
-[ExecuteAlways]
-public class Grid : MonoBehaviour
+public class TubeGrid : MonoBehaviour
 {
     [SerializeField]
     private int Rows = 1;
@@ -12,6 +11,11 @@ public class Grid : MonoBehaviour
     private Vector2 CellSize = Vector2.one;
     [SerializeField]
     private Vector2 Overlap = Vector2.zero;
+
+    void Start()
+    {
+        TubeManager.Instance.SetGrid(this);
+    }
 
     [Button("Snap To Grid")]
     public void SnapObjectsToGrid()

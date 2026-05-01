@@ -18,6 +18,7 @@ public class InputManager : Manager<InputManager>
         _controls.Gameplay.Click.started += HandleClickStarted;
         _controls.Gameplay.Click.canceled += HandleClickCanceled;
         _controls.Gameplay.Click.performed += HandleClickPerformed;
+        _controls.Gameplay.RightClick.performed += HandleRightClickPerformed;
 
         return base.Initialize();
     }
@@ -53,6 +54,12 @@ public class InputManager : Manager<InputManager>
             
             Signals.Get<DragSignal>().Dispatch(GetMouseWorldPosition(), false);
         }
+    }
+
+    private void HandleRightClickPerformed (InputAction.CallbackContext context)
+    {
+        Utils.LogMessage(this, $"rotate performed");
+        Signals.Get<RotateSignal>().Dispatch(GetMouseWorldPosition());
     }
 
     public Vector2 GetMouseWorldPosition ()

@@ -44,3 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2d10eb6c9f81004787690eb84816b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TubeManager
+  ITubePrefab: {fileID: 1663970593800788322, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
+  LTubePrefab: {fileID: 6440942404359892228, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
+  TTubePrefab: {fileID: 6669199772685423250, guid: f34786ac4869a294d8dade374b325708, type: 3}
+  CrossTubePrefab: {fileID: 5664344624122781900, guid: 0542ef6b8d5b5cd43b0661e2875108eb, type: 3}

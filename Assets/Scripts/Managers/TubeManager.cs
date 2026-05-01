@@ -1,10 +1,21 @@
 using System.Collections.Generic;
 using NaughtyAttributes;
+using UnityEngine;
 
 public class TubeManager : Manager<TubeManager>
 {
     public List<Tube> Tubes { get; private set; } = new();
     public Tube Exit { get; private set;}
+    public TubeGrid TubeGrid {get; private set;}
+
+    [Foldout("Internal Config")]
+    public GameObject ITubePrefab;
+    [Foldout("Internal Config")]
+    public GameObject LTubePrefab;
+    [Foldout("Internal Config")]
+    public GameObject TTubePrefab;
+    [Foldout("Internal Config")]
+    public GameObject CrossTubePrefab;
 
     private bool _hasCheckedConnections = false;
 
@@ -18,6 +29,11 @@ public class TubeManager : Manager<TubeManager>
         Tubes.Remove(tube);
     }
 
+    public void SetGrid(TubeGrid grid)
+    {
+        TubeGrid = grid;
+    }
+
     public void StartPuzzle ()
     {
         Exit = Tubes.Find(t => t.IsExit);
@@ -28,7 +44,29 @@ public class TubeManager : Manager<TubeManager>
         _hasCheckedConnections = false;
     }
 
-    [Button("Test")]
+    public Tube SpawnTubeAt (Tube.TubeType type, Vector2 position)
+    {
+        GameObject prefab = null;
+        switch (type)
+        {
+            case Tube.TubeType.ITube:
+                prefab = ITubePrefab;
+                break;
+            case Tube.TubeType.LTube:
+                prefab = LTubePrefab;
+                break;
+            case Tube.TubeType.TTube:
+                prefab = TTubePrefab;
+                break;
+            case Tube.TubeType.CrossTube:
+                prefab = CrossTubePrefab;
+                break;
+        }
+
+        GameObject tubeObj = Instantiate(prefab, position, Quaternion.identity);
+        return tubeObj.GetComponent<Tube>();
+    }
+
     public List<Tube> GetPath(Tube start, Tube end)
     {
         if (!_hasCheckedConnections) FindAllConnections();
