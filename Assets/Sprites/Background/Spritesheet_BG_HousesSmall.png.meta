@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 4d94cbba6b8e33399b9910690ce3fbdb
+guid: 7f8261fbb7b449ab89b966e2865a4e4e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6561577557190205234
-    second: Spritesheet_Hamster2_0
+      213: 8618094377528324795
+    second: Spritesheet_BG_HousesSmall_0
   - first:
-      213: -1163144112916229656
-    second: Spritesheet_Hamster2_1
+      213: 7250015917533687918
+    second: Spritesheet_BG_HousesSmall_1
   - first:
-      213: -3596643692771587188
-    second: Spritesheet_Hamster2_2
+      213: 1551303776225039543
+    second: Spritesheet_BG_HousesSmall_2
   - first:
-      213: 216701219360132763
-    second: Spritesheet_Hamster2_3
+      213: -2247038173380623997
+    second: Spritesheet_BG_HousesSmall_3
+  - first:
+      213: 9015700029455381088
+    second: Spritesheet_BG_HousesSmall_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spritesheet_Hamster2_0
+      name: Spritesheet_BG_HousesSmall_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
-        width: 48
-        height: 48
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23f5f7606086f0b50800000000000000
-      internalID: 6561577557190205234
+      spriteID: bb2fd5dfc2f999770800000000000000
+      internalID: 8618094377528324795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_Hamster2_1
+      name: Spritesheet_BG_HousesSmall_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 192
-        width: 48
-        height: 48
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e19a07879eabdfe0800000000000000
-      internalID: -1163144112916229656
+      spriteID: e60f584901b3d9460800000000000000
+      internalID: 7250015917533687918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_Hamster2_2
+      name: Spritesheet_BG_HousesSmall_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
-        width: 48
-        height: 48
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8b43b40e97261ec0800000000000000
-      internalID: -3596643692771587188
+      spriteID: 7b49d98b096578510800000000000000
+      internalID: 1551303776225039543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_Hamster2_3
+      name: Spritesheet_BG_HousesSmall_3
       rect:
         serializedVersion: 2
-        x: 144
-        y: 192
-        width: 48
-        height: 48
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +206,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9eca526c90e10300800000000000000
-      internalID: 216701219360132763
+      spriteID: 381c7e6cfaae0d0e0800000000000000
+      internalID: -2247038173380623997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BG_HousesSmall_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062ba29d8633e1d70800000000000000
+      internalID: 9015700029455381088
       vertices: []
       indices: 
       edges: []
@@ -213,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5a244295bf5926409bc4c5aabb101fc0
+    spriteID: f8be6efe1209d2ad5b7c9eb933c546b8
     internalID: 0
     vertices: []
     indices: 
@@ -223,12 +248,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Spritesheet_Hamster2_0: 6561577557190205234
-      Spritesheet_Hamster2_1: -1163144112916229656
-      Spritesheet_Hamster2_2: -3596643692771587188
-      Spritesheet_Hamster2_3: 216701219360132763
+      Spritesheet_BG_HousesSmall_0: 8618094377528324795
+      Spritesheet_BG_HousesSmall_1: 7250015917533687918
+      Spritesheet_BG_HousesSmall_2: 1551303776225039543
+      Spritesheet_BG_HousesSmall_3: -2247038173380623997
+      Spritesheet_BG_HousesSmall_4: 9015700029455381088
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
