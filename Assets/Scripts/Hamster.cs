@@ -31,7 +31,7 @@ public class Hamster : MonoBehaviour
     {
         _pathTween?.Kill();
         transform.position = _initialPosition;
-        transform.rotation = Quaternion.identity;
+        spriteTransform.rotation = Quaternion.identity;
     }
 
     public void AnimatePath (List<Tube> path)

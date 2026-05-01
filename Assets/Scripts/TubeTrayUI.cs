@@ -1,7 +1,35 @@
+using deVoid.Utils;
+using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TubeTrayUI : MonoBehaviour
 {
+    [Foldout("Internal Config")]
+    public Button playButton;
+    [Foldout("Internal Config")]
+    public Sprite playButtonSprite;
+    [Foldout("Internal Config")]
+    public Sprite stopButtonSprite;
+
+    private bool _isShowingPlayButton = true;
+
+    private void Start()
+    {
+        Signals.Get<SimulationResetSignal>().AddListener(Reset);
+    }
+
+    private void OnDestroy()
+    {
+        Signals.Get<SimulationResetSignal>().RemoveListener(Reset);
+    }
+
+    private void Reset ()
+    {
+        playButton.image.sprite = playButtonSprite;
+        _isShowingPlayButton = true;
+    }
+
     public void HandleITubeButtonPressed ()
     {
         SpawnTubeAtMouse(Tube.TubeType.ITube);
@@ -22,8 +50,26 @@ public class TubeTrayUI : MonoBehaviour
         SpawnTubeAtMouse(Tube.TubeType.CrossTube);
     }
 
+    public void HandleSimulationPressed()
+    {
+        if (_isShowingPlayButton)
+        {
+            Signals.Get<SimulationStartSignal>().Dispatch();
+            playButton.image.sprite = stopButtonSprite;
+        }
+        else
+        {
+            Signals.Get<SimulationResetSignal>().Dispatch();
+            playButton.image.sprite = playButtonSprite;
+        }
+
+        _isShowingPlayButton = !_isShowingPlayButton;
+    }
+
     private void SpawnTubeAtMouse (Tube.TubeType type)
     {
+        if (GameManager.Instance.IsSimulationRunning) return;
+
         Vector2 position = InputManager.Instance.GetMouseWorldPosition();
         Tube tube = TubeManager.Instance.SpawnTubeAt(type, position);
         tube.StartMove();
