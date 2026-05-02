@@ -4207,6 +4207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hamster1
       objectReference: {fileID: 0}
+    - target: {fileID: 3600445591282992506, guid: 4aaf190d12e8aa442881f7902fc25fc4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1068506924681091128, guid: 0574a4d4613bf254dbcb4d0a9d8e3d4b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hamster
   spriteTransform: {fileID: 374772116168022581}
+  exclamationPrefab: {fileID: 974502002379939761, guid: 04aa78a6e8405734abe69b1a92061763, type: 3}
   PathDurationPerTube: 0.4
 --- !u!58 &7749762537291561857
 CircleCollider2D:

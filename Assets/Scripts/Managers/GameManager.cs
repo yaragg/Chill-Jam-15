@@ -111,7 +111,7 @@ public class GameManager : Manager<GameManager>
 
         // Add a delay so the player can see the hamster celebrating or getting stuck
         if (success) Utils.DelayCall(this, 2.2f, StartNextPuzzle);
-        else Utils.DelayCall(this, 2f, () => Signals.Get<SimulationResetSignal>().Dispatch());
+        else Utils.DelayCall(this, 1.5f, () => Signals.Get<SimulationResetSignal>().Dispatch());
         IsSimulationRunning = false;
     }
 

@@ -12,6 +12,8 @@ public class Hamster : MonoBehaviour
     [Foldout("Internal Config")]
     public Transform spriteTransform;
     [Foldout("Internal Config")]
+    public GameObject exclamationPrefab;
+    [Foldout("Internal Config")]
     public float PathDurationPerTube = 0.4f;
 
     private Vector3 _prevPosition;
@@ -78,6 +80,11 @@ public class Hamster : MonoBehaviour
     private void HandleEndOfPath (Tube tube)
     {
         if (tube.IsExit) _frameAnimator.Play("celebrate");
+        else
+        {
+            GameObject exclamation = Instantiate(exclamationPrefab, transform.position + Vector3.up * 0.5f, Quaternion.identity);
+            Utils.DelayCall(this, 1f, () => Destroy(exclamation));
+        }
         Signals.Get<HamsterArrivedSignal>().Dispatch(tube.IsExit);
     }
 
