@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using deVoid.Utils;
 using NaughtyAttributes;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -56,6 +57,11 @@ public class GameManager : Manager<GameManager>
     {
         SetupGrid();
 
+        #if UNITY_EDITOR
+        ObjectIdentifier levelTitle = ObjectManager.Instance.GetObject("level");
+        if (levelTitle != null) levelTitle.GetComponent<TMP_Text>().text = $"Level: {GetCurrentLevelDef().name}";
+        #endif
+
         int numFloors = 5;
         // Remove assets and hamsters from unused entrance floors
         for (int i = 1; i <= numFloors; i++)
@@ -96,11 +102,11 @@ public class GameManager : Manager<GameManager>
         TubeManager.Instance.SetGrid(tubeGrid);
 
         float gridX = -tubeGrid.GetWidth() / 2;
-        float gridY = ObjectManager.Instance.GetObjectInGroup("grid-spawn").transform.position.y;
+        float gridY = ObjectManager.Instance.GetObject("grid-spawn").transform.position.y;
         tubeGrid.transform.position = new Vector3(gridX + tubeGrid.Offset.x, gridY, 0f);
 
-        GameObject cageLeft = ObjectManager.Instance.GetObjectInGroup("cage-left").gameObject;
-        GameObject cageRight = ObjectManager.Instance.GetObjectInGroup("cage-right").gameObject;
+        GameObject cageLeft = ObjectManager.Instance.GetObject("cage-left").gameObject;
+        GameObject cageRight = ObjectManager.Instance.GetObject("cage-right").gameObject;
         float cageY = gridY - 1f + tubeGrid.Overlap.y;
         cageLeft.transform.position = new Vector3(gridX + tubeGrid.Overlap.x, cageY, 0f);
         cageRight.transform.position = new Vector3(gridX + tubeGrid.GetWidth() - tubeGrid.Overlap.x, cageY, 0f);

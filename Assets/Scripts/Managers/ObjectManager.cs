@@ -49,12 +49,17 @@ public class ObjectManager : Manager<ObjectManager>
         return new List<ObjectIdentifier>();
     }
 
-    public ObjectIdentifier GetObjectInGroup(string id, string group = "Default")
+    public ObjectIdentifier GetObjectInGroup(string id, string group)
     {
         if (_objectsByGroup.TryGetValue(group, out List<ObjectIdentifier> objects))
         {
             return objects.Find(obj => obj.id == id);
         }
         return null;
+    }
+
+    public ObjectIdentifier GetObject (string id)
+    {
+        return GetObjectInGroup(id, "Default");
     }
 }
