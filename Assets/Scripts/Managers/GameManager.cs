@@ -11,13 +11,15 @@ public class GameManager : Manager<GameManager>
 
     [Foldout("Internal Config")]
     public string GameSceneName;
+    [Foldout("Internal Config")]
+    public string EndSceneName;
 
     private int _hamstersArrived = 0;
     private int _hamstersExited = 0;
     private LevelOrderDef _levelOrderDef;
     private int _levelIndex;
 
-    protected override IEnumerator Initialize ()
+    protected override IEnumerator Initialize()
     {
         _levelOrderDef = Resources.Load<LevelOrderDef>("LevelOrderDef");
 
@@ -25,19 +27,75 @@ public class GameManager : Manager<GameManager>
         Signals.Get<HamsterArrivedSignal>().AddListener(HandleHamsterArrived);
         Signals.Get<SimulationResetSignal>().AddListener(ResetPuzzle);
 
+        SceneManager.sceneLoaded += (scene, mode) => HandleSceneChange(scene);
+
         yield return null;
     }
 
-    private void HandleSceneChange ()
+    private void HandleSceneChange(Scene scene)
     {
-        if (SceneManager.GetActiveScene().name == GameSceneName)
+        Utils.LogMessage(this, $"scene {scene.name} {GameSceneName}");
+        if (scene.name == GameSceneName)
         {
-            
+            SetupFromLevel();
         }
     }
 
-    [Button("Start")]
-    public void HandleSimulationStart ()
+    private void SetupFromLevel()
+    {
+        SetupGrid();
+
+        int numFloors = 5;
+        // Remove assets and hamsters from unused entrance floors
+        for (int i = 1; i <= numFloors; i++)
+        {
+            string groupID = i.ToString();
+            ObjectIdentifier entrance = ObjectManager.Instance.GetObjectInGroup("entrance", groupID);
+            if (entrance != null)
+            {
+                ObjectIdentifier hamster = ObjectManager.Instance.GetObjectInGroup("hamster", groupID);
+                hamster.GetComponent<Hamster>().SetEntrance(entrance.GetComponent<Tube>());
+            }
+            else
+            {
+                List<ObjectIdentifier> group = ObjectManager.Instance.GetGroup(i.ToString());
+                group.ForEach(obj => Destroy(obj.gameObject));
+            }
+        }
+
+        // Remove assets from unused exit floors
+        for (int i = 1; i <= numFloors; i++)
+        {
+            string groupID = $"right-{i}";
+            ObjectIdentifier exit = ObjectManager.Instance.GetObjectInGroup("exit", groupID);
+            if (exit == null)
+            {
+                List<ObjectIdentifier> group = ObjectManager.Instance.GetGroup(groupID);
+                group.ForEach(obj => Destroy(obj.gameObject));
+            }
+        }
+
+    }
+
+    private void SetupGrid()
+    {
+        LevelDef levelDef = GetCurrentLevelDef();
+        GameObject tubeGridObj = Instantiate(levelDef.levelPrefab);
+        TubeGrid tubeGrid = tubeGridObj.GetComponent<TubeGrid>();
+        TubeManager.Instance.SetGrid(tubeGrid);
+
+        float gridX = -tubeGrid.GetWidth() / 2;
+        float gridY = ObjectManager.Instance.GetObjectInGroup("grid-spawn").transform.position.y;
+        tubeGrid.transform.position = new Vector3(gridX + tubeGrid.Offset.x, gridY, 0f);
+
+        GameObject cageLeft = ObjectManager.Instance.GetObjectInGroup("cage-left").gameObject;
+        GameObject cageRight = ObjectManager.Instance.GetObjectInGroup("cage-right").gameObject;
+        float cageY = gridY - 1f + tubeGrid.Overlap.y;
+        cageLeft.transform.position = new Vector3(gridX + tubeGrid.Overlap.x, cageY, 0f);
+        cageRight.transform.position = new Vector3(gridX + tubeGrid.GetWidth() - tubeGrid.Overlap.x, cageY, 0f);
+    }
+
+    public void HandleSimulationStart()
     {
         IsSimulationRunning = true;
         _hamstersArrived = 0;
@@ -46,17 +104,18 @@ public class GameManager : Manager<GameManager>
         HamsterManager.Instance.AnimateHamsters();
     }
 
-    private void HandleSimulationEnd ()
+    private void HandleSimulationEnd()
     {
         bool success = _hamstersExited == HamsterManager.Instance.Hamsters.Count;
         Utils.LogMessage(this, $"Simulation end: {success}");
-        
-        if (success) StartNextPuzzle();
-        else Signals.Get<SimulationResetSignal>().Dispatch();
+
+        // Add a delay so the player can see the hamster celebrating or getting stuck
+        if (success) Utils.DelayCall(this, 2.2f, StartNextPuzzle);
+        else Utils.DelayCall(this, 2f, () => Signals.Get<SimulationResetSignal>().Dispatch());
         IsSimulationRunning = false;
     }
 
-    private void HandleHamsterArrived (bool foundExit)
+    private void HandleHamsterArrived(bool foundExit)
     {
         _hamstersArrived++;
         if (foundExit) _hamstersExited++;
@@ -65,17 +124,26 @@ public class GameManager : Manager<GameManager>
         if (_hamstersArrived == HamsterManager.Instance.Hamsters.Count)
         {
             HandleSimulationEnd();
-        }   
+        }
     }
 
-    private void StartNextPuzzle ()
+    [Button("Skip Level")]
+    private void StartNextPuzzle()
     {
-        Signals.Get<SimulationResetSignal>().Dispatch();
+        _levelIndex++;
+        if (_levelIndex >= _levelOrderDef.levels.Count)
+        {
+            SceneManager.LoadScene(EndSceneName);
+            return;
+        }
+
         Utils.LogMessage(this, "Starting next puzzle...");
+        TubeManager.Instance.Reset();
         SceneManager.LoadScene(GameSceneName);
+        IsSimulationRunning = false;
     }
 
-    private void ResetPuzzle ()
+    private void ResetPuzzle()
     {
         IsSimulationRunning = false;
         Utils.LogMessage(this, "Resetting puzzle...");
@@ -83,7 +151,7 @@ public class GameManager : Manager<GameManager>
         TubeManager.Instance.Reset();
     }
 
-    public LevelDef GetCurrentLevelDef ()
+    public LevelDef GetCurrentLevelDef()
     {
         return _levelOrderDef.levels[_levelIndex];
     }

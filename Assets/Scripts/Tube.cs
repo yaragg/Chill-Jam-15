@@ -30,6 +30,7 @@ public class Tube : MonoBehaviour
 
     public List<Tube> Connections { get; private set; } = new();
     public bool IsExit => Type == TubeType.Exit;
+    public bool IsEntrance => Type == TubeType.Entrance;
     public bool IsRandom => Type == TubeType.Random;
 
     private List<Collider2D> _exits = new();
@@ -92,12 +93,12 @@ public class Tube : MonoBehaviour
         }
     }
 
-    public void SetWasSpawned (bool value)
+    public void SetWasSpawned(bool value)
     {
         _wasSpawnedByPlayer = value;
     }
 
-    private void RandomizeTile ()
+    private void RandomizeTile()
     {
         TubeType type = Utils.GetRandomItem(RandomTypes);
         Tube newTube = TubeManager.Instance.SpawnTubeAt(type, transform.position);
@@ -107,21 +108,23 @@ public class Tube : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void HandleTap (Vector2 clickWorldPosition)
+    private void HandleTap(Vector2 clickWorldPosition)
     {
         if (_tileCollider.OverlapPoint(clickWorldPosition))
         {
+            if (!CanBeMoved) return;
             if (_isBeingMoved) EndMove();
             else StartMove();
         }
     }
 
-    private void HandleDrag (Vector2 clickWorldPosition, bool isStarting)
+    private void HandleDrag(Vector2 clickWorldPosition, bool isStarting)
     {
         if (isStarting)
         {
             if (_tileCollider.OverlapPoint(clickWorldPosition))
             {
+                if (!CanBeMoved) return;
                 StartMove();
             }
         }
@@ -131,7 +134,7 @@ public class Tube : MonoBehaviour
         }
     }
 
-    private void HandleRotate (Vector2 clickWorldPosition)
+    private void HandleRotate(Vector2 clickWorldPosition)
     {
         if (!_isRotating && CanBeRotated && _tileCollider.OverlapPoint(clickWorldPosition))
         {
@@ -140,17 +143,17 @@ public class Tube : MonoBehaviour
         }
     }
 
-    public void StartMove ()
+    public void StartMove()
     {
         _isBeingMoved = true;
-        transform.position = new Vector3(transform.position.x, transform.position.y, -1f);
+        TubeRenderer.sortingOrder = 2;
     }
 
-    public void EndMove ()
+    public void EndMove()
     {
         _isBeingMoved = false;
-        Vector3 snappedPosition = TubeManager.Instance.TubeGrid.SnapPositionToGrid(transform.position);
-        transform.position = new Vector3(snappedPosition.x, snappedPosition.y, 0f);
+        transform.position = TubeManager.Instance.TubeGrid.SnapPositionToGrid(transform.position);
+        TubeRenderer.sortingOrder = -1;
     }
 
     private void UpdateMechanic()

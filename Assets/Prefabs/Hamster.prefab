@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 374772116168022581}
   - component: {fileID: 3600445591282992506}
+  - component: {fileID: 1703668747503801322}
   m_Layer: 0
   m_Name: HamsterSprite
   m_TagString: Untagged
@@ -79,9 +80,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5547138252453062368, guid: 0574a4d4613bf254dbcb4d0a9d8e3d4b, type: 3}
+  m_Sprite: {fileID: -1068506924681091128, guid: 0574a4d4613bf254dbcb4d0a9d8e3d4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -91,6 +92,53 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1703668747503801322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664267284633000389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab6a4ecdaac9694d8af6e7c0cf45978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FrameAnimator
+  StartingAnimation: 
+  Animations:
+  - name: float
+    frameDuration: 80
+    shouldLoop: 1
+    frames:
+    - {fileID: -8645920394441579579, guid: d9844b3752076db5bb2963cbec943d56, type: 3}
+    - {fileID: 3710597571745820505, guid: d9844b3752076db5bb2963cbec943d56, type: 3}
+    - {fileID: 6090375034604199759, guid: d9844b3752076db5bb2963cbec943d56, type: 3}
+    - {fileID: -5349693657257435244, guid: d9844b3752076db5bb2963cbec943d56, type: 3}
+  - name: jump
+    frameDuration: 75
+    shouldLoop: 0
+    frames:
+    - {fileID: 4204293032371533300, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: 6872224348498416793, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: -1302040906053349106, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: -5273689690571871439, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: 5793232068120892561, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: -1860214625504159823, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+  - name: celebrate
+    frameDuration: 100
+    shouldLoop: 1
+    frames:
+    - {fileID: 4204293032371533300, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: 6872224348498416793, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: -1302040906053349106, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: -5273689690571871439, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: 5793232068120892561, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: -1860214625504159823, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: 5793232068120892561, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: -5273689690571871439, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: -1302040906053349106, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: 6872224348498416793, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+    - {fileID: 4204293032371533300, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
 --- !u!1 &2270142509756156873
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51a694195ef12ad478c8f386a45655b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hamster
-  Entrance: {fileID: 0}
   spriteTransform: {fileID: 374772116168022581}
 --- !u!58 &7749762537291561857
 CircleCollider2D:

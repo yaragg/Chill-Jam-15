@@ -50,12 +50,13 @@ MonoBehaviour:
   <Mechanic>k__BackingField: 0
   CanBeMoved: 1
   CanBeRotated: 1
-  IsExit: 0
+  RandomTypes: 01000000020000000300000004000000
   AccelerateSprite: {fileID: -1169497165364098897, guid: 1defd88bf488dd6fabc4c8cbba358628, type: 3}
   DecelerateSprite: {fileID: -5816791915599919357, guid: 1defd88bf488dd6fabc4c8cbba358628, type: 3}
   TubeRenderer: {fileID: 3426398422927446132}
   MechanicRenderer: {fileID: 2251863644889840811}
   targetOverride: {fileID: 0}
+  Type: 0
 --- !u!61 &3409798478459352131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -181,7 +182,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -31739918, guid: 026322246515e5c47962abfb9b840d6e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

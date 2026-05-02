@@ -7,18 +7,22 @@ using UnityEngine;
 
 public class Hamster : MonoBehaviour
 {
-    public Tube Entrance;
+    public Tube Entrance {get; private set;}
 
     [Foldout("Internal Config")]
     public Transform spriteTransform;
+    [Foldout("Internal Config")]
+    public float PathDurationPerTube = 0.4f;
 
     private Vector3 _prevPosition;
     private Vector3 _initialPosition;
     private Tween _pathTween;
+    private FrameAnimator _frameAnimator;
 
     private void Start ()
     {
         _initialPosition = transform.position;
+        _frameAnimator = GetComponentInChildren<FrameAnimator>();
         HamsterManager.Instance.RegisterHamster(this);
     }
 
@@ -27,33 +31,53 @@ public class Hamster : MonoBehaviour
         HamsterManager.Instance.UnregisterHamster(this);
     }
 
+    public void SetEntrance (Tube entrance)
+    {
+        Entrance = entrance;
+    }
+
     public void Reset ()
     {
         _pathTween?.Kill();
         transform.position = _initialPosition;
         spriteTransform.rotation = Quaternion.identity;
+        _frameAnimator.Stop();
     }
 
     public void AnimatePath (List<Tube> path)
     {
-        float defaultDuration = 0.5f;
         _prevPosition = transform.position;
 
         void AdjustAngle ()
         {
+            if (_frameAnimator.CurrentlyPlaying == "jump") return;
             spriteTransform.right = transform.position - _prevPosition;
             _prevPosition = transform.position;
         }
 
+
+        if (path.Count == 0)
+        {
+            _frameAnimator.Play("jump_fail");
+            Utils.DelayCall(this, _frameAnimator.Duration, () => HandleEndOfPath(Entrance));
+            return;
+        }
+        
+        _frameAnimator.Play("jump");
+
+        Utils.DelayCall(this, _frameAnimator.Duration, () => _frameAnimator.Play("float"));
+
         Vector3[] waypoints = path.Select(t => t.GetTargetPoint()).ToArray();
         _pathTween = transform
-            .DOPath(waypoints, defaultDuration * waypoints.Length, PathType.CatmullRom, PathMode.Sidescroller2D)
+            .DOPath(waypoints, PathDurationPerTube * waypoints.Length, PathType.CatmullRom, PathMode.Sidescroller2D)
+            .SetDelay(0.1f)
             .OnUpdate(AdjustAngle)
             .OnComplete(() => HandleEndOfPath(path.Last()));
     }
 
     private void HandleEndOfPath (Tube tube)
     {
+        if (tube.IsExit) _frameAnimator.Play("celebrate");
         Signals.Get<HamsterArrivedSignal>().Dispatch(tube.IsExit);
     }
 

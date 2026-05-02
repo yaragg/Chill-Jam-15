@@ -5,6 +5,7 @@ using UnityEngine;
 public class TubeManager : Manager<TubeManager>
 {
     public List<Tube> Tubes { get; private set; } = new();
+    public List<Tube> Entrances { get; private set; } = new();
     public Tube Exit { get; private set;}
     public TubeGrid TubeGrid {get; private set;}
 
@@ -37,6 +38,7 @@ public class TubeManager : Manager<TubeManager>
     public void StartPuzzle ()
     {
         Exit = Tubes.Find(t => t.IsExit);
+        Entrances = Tubes.FindAll(t => t.IsEntrance);
     }
 
     public override void Reset ()

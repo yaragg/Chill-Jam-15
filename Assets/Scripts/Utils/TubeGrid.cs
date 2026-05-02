@@ -9,10 +9,8 @@ public class TubeGrid : MonoBehaviour
     private int Columns = 1;
     [SerializeField]
     private Vector2 CellSize = Vector2.one;
-    [SerializeField]
-    private Vector2 Overlap = Vector2.zero;
-
-    private Vector3 _offset = new Vector3(0.5f, 0.5f, 0f);
+    public Vector2 Overlap = Vector2.zero;
+    public Vector3 Offset = new Vector3(0.5f, 0.5f, 0f);
 
     void Start()
     {
@@ -26,6 +24,11 @@ public class TubeGrid : MonoBehaviour
         {
             child.position = SnapPositionToGrid(child.position);
         }
+    }
+
+    public float GetWidth ()
+    {
+        return Columns * (CellSize.x - Overlap.x);
     }
 
     public Vector2 SnapPositionToGrid(Vector2 worldPosition)
@@ -50,14 +53,14 @@ public class TubeGrid : MonoBehaviour
         Vector2 totalCellSize = CellSize - Overlap;
         for (int x = 0; x <= Columns; x++)
         {
-            Vector3 start = transform.TransformPoint(new Vector2(x * totalCellSize.x, 0)) -_offset;
-            Vector3 end = transform.TransformPoint(new Vector2(x * totalCellSize.x, Rows * totalCellSize.y)) -_offset;
+            Vector3 start = transform.TransformPoint(new Vector2(x * totalCellSize.x, 0)) -Offset;
+            Vector3 end = transform.TransformPoint(new Vector2(x * totalCellSize.x, Rows * totalCellSize.y)) -Offset;
             Gizmos.DrawLine(start, end);
         }
         for (int y = 0; y <= Rows; y++)
         {
-            Vector3 start = transform.TransformPoint(new Vector2(0, y * totalCellSize.y)) -_offset;
-            Vector3 end = transform.TransformPoint(new Vector2(Columns * totalCellSize.x, y * totalCellSize.y)) -_offset;
+            Vector3 start = transform.TransformPoint(new Vector2(0, y * totalCellSize.y)) -Offset;
+            Vector3 end = transform.TransformPoint(new Vector2(Columns * totalCellSize.x, y * totalCellSize.y)) -Offset;
             Gizmos.DrawLine(start, end);
         }
     }
