@@ -1,6 +1,6 @@
 using UnityEngine;
 
-class LevelDef : ScriptableObject
+public class LevelDef : ScriptableObject
 {
     public GameObject levelPrefab;
     public int numHamsters = 1;

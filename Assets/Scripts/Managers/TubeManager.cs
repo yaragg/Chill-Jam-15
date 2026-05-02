@@ -64,7 +64,9 @@ public class TubeManager : Manager<TubeManager>
         }
 
         GameObject tubeObj = Instantiate(prefab, position, Quaternion.identity);
-        return tubeObj.GetComponent<Tube>();
+        Tube tube = tubeObj.GetComponent<Tube>();
+        tube.SetWasSpawned(true);
+        return tube;
     }
 
     public List<Tube> GetPath(Tube start, Tube end)

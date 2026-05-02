@@ -30,26 +30,6 @@ public class TubeTrayUI : MonoBehaviour
         _isShowingPlayButton = true;
     }
 
-    public void HandleITubeButtonPressed ()
-    {
-        SpawnTubeAtMouse(Tube.TubeType.ITube);
-    }
-
-    public void HandleLTubeButtonPressed ()
-    {
-        SpawnTubeAtMouse(Tube.TubeType.LTube);
-    }
-
-    public void HandleTTubeButtonPressed ()
-    {
-        SpawnTubeAtMouse(Tube.TubeType.TTube);
-    }
-
-    public void HandleCrossTubeButtonPressed ()
-    {
-        SpawnTubeAtMouse(Tube.TubeType.CrossTube);
-    }
-
     public void HandleSimulationPressed()
     {
         if (_isShowingPlayButton)
@@ -66,12 +46,5 @@ public class TubeTrayUI : MonoBehaviour
         _isShowingPlayButton = !_isShowingPlayButton;
     }
 
-    private void SpawnTubeAtMouse (Tube.TubeType type)
-    {
-        if (GameManager.Instance.IsSimulationRunning) return;
-
-        Vector2 position = InputManager.Instance.GetMouseWorldPosition();
-        Tube tube = TubeManager.Instance.SpawnTubeAt(type, position);
-        tube.StartMove();
-    }
+    
 }

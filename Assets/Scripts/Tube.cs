@@ -36,6 +36,7 @@ public class Tube : MonoBehaviour
     private ContactFilter2D _filter;
     private bool _isBeingMoved = false;
     private bool _isRotating = false;
+    private bool _wasSpawnedByPlayer = false;
     private Collider2D _tileCollider;
     private List<float> _randomAngles = new List<float>() { 0f, 90f, 180f, 270f };
 
@@ -47,7 +48,7 @@ public class Tube : MonoBehaviour
             return;
         }
 
-        if (CanBeMoved)
+        if (!_wasSpawnedByPlayer && CanBeMoved)
         {
             Destroy(gameObject);
             return;
@@ -89,6 +90,11 @@ public class Tube : MonoBehaviour
             Vector2 mousePos = InputManager.Instance.GetMouseWorldPosition();
             transform.position = mousePos;
         }
+    }
+
+    public void SetWasSpawned (bool value)
+    {
+        _wasSpawnedByPlayer = value;
     }
 
     private void RandomizeTile ()
