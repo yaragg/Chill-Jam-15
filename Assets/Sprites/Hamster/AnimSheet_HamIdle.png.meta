@@ -1,0 +1,2992 @@
+fileFormatVersion: 2
+guid: 73b78fa81e8af5a2cbf6c048d40b0dc8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5890941480141194900
+    second: AnimSheet_HamIdle_0
+  - first:
+      213: 6010177975942825138
+    second: AnimSheet_HamIdle_1
+  - first:
+      213: 4850866873292720420
+    second: AnimSheet_HamIdle_2
+  - first:
+      213: -5601215047663235023
+    second: AnimSheet_HamIdle_3
+  - first:
+      213: -4586626006809955143
+    second: AnimSheet_HamIdle_4
+  - first:
+      213: 967962763849349797
+    second: AnimSheet_HamIdle_5
+  - first:
+      213: 6752900491874532487
+    second: AnimSheet_HamIdle_6
+  - first:
+      213: 130454988431880124
+    second: AnimSheet_HamIdle_7
+  - first:
+      213: -5003937493177885117
+    second: AnimSheet_HamIdle_8
+  - first:
+      213: -4627016758687886329
+    second: AnimSheet_HamIdle_9
+  - first:
+      213: 2308672464931248566
+    second: AnimSheet_HamIdle_10
+  - first:
+      213: -2277810808693119933
+    second: AnimSheet_HamIdle_11
+  - first:
+      213: 8151912835122560540
+    second: AnimSheet_HamIdle_12
+  - first:
+      213: 7601923572538485958
+    second: AnimSheet_HamIdle_13
+  - first:
+      213: 5533390875422115027
+    second: AnimSheet_HamIdle_14
+  - first:
+      213: 6918145810665329127
+    second: AnimSheet_HamIdle_15
+  - first:
+      213: 1858033379671323500
+    second: AnimSheet_HamIdle_16
+  - first:
+      213: -5075810170493459650
+    second: AnimSheet_HamIdle_17
+  - first:
+      213: -8554720816957909141
+    second: AnimSheet_HamIdle_18
+  - first:
+      213: 7594529963424752716
+    second: AnimSheet_HamIdle_19
+  - first:
+      213: 4389038178300014195
+    second: AnimSheet_HamIdle_20
+  - first:
+      213: -6360815809838824570
+    second: AnimSheet_HamIdle_21
+  - first:
+      213: -2927897041572431489
+    second: AnimSheet_HamIdle_22
+  - first:
+      213: 5964143928826479274
+    second: AnimSheet_HamIdle_23
+  - first:
+      213: -3375941608973646987
+    second: AnimSheet_HamIdle_24
+  - first:
+      213: 9004642259997286585
+    second: AnimSheet_HamIdle_25
+  - first:
+      213: 5440704787899030256
+    second: AnimSheet_HamIdle_26
+  - first:
+      213: -8087355763953684365
+    second: AnimSheet_HamIdle_27
+  - first:
+      213: -6125117680630897209
+    second: AnimSheet_HamIdle_28
+  - first:
+      213: 1047853080244658863
+    second: AnimSheet_HamIdle_29
+  - first:
+      213: -6052671982504040691
+    second: AnimSheet_HamIdle_30
+  - first:
+      213: -4253194888505219949
+    second: AnimSheet_HamIdle_31
+  - first:
+      213: -2296035687603161291
+    second: AnimSheet_HamIdle_32
+  - first:
+      213: 5180930416740558511
+    second: AnimSheet_HamIdle_33
+  - first:
+      213: -2328755584689598967
+    second: AnimSheet_HamIdle_34
+  - first:
+      213: -5046527204237243009
+    second: AnimSheet_HamIdle_35
+  - first:
+      213: -375080464971828466
+    second: AnimSheet_HamIdle_36
+  - first:
+      213: -7286335406660773430
+    second: AnimSheet_HamIdle_37
+  - first:
+      213: -5349506741559597285
+    second: AnimSheet_HamIdle_38
+  - first:
+      213: -5181910126811556369
+    second: AnimSheet_HamIdle_39
+  - first:
+      213: 9024276392104642427
+    second: AnimSheet_HamIdle_40
+  - first:
+      213: 7451481537385960297
+    second: AnimSheet_HamIdle_41
+  - first:
+      213: -5310992987264783943
+    second: AnimSheet_HamIdle_42
+  - first:
+      213: -5396833793159361810
+    second: AnimSheet_HamIdle_43
+  - first:
+      213: 4068346662608055262
+    second: AnimSheet_HamIdle_44
+  - first:
+      213: -2635191780892780741
+    second: AnimSheet_HamIdle_45
+  - first:
+      213: -6118489773117279622
+    second: AnimSheet_HamIdle_46
+  - first:
+      213: 7742381885453959895
+    second: AnimSheet_HamIdle_47
+  - first:
+      213: -521174617146910961
+    second: AnimSheet_HamIdle_48
+  - first:
+      213: -7655650524525199399
+    second: AnimSheet_HamIdle_49
+  - first:
+      213: -154570792058509120
+    second: AnimSheet_HamIdle_50
+  - first:
+      213: 4772991093728895397
+    second: AnimSheet_HamIdle_51
+  - first:
+      213: 4421787678017894984
+    second: AnimSheet_HamIdle_52
+  - first:
+      213: -3156602740954552989
+    second: AnimSheet_HamIdle_53
+  - first:
+      213: -4122640754351688981
+    second: AnimSheet_HamIdle_54
+  - first:
+      213: 7484447232579908759
+    second: AnimSheet_HamIdle_55
+  - first:
+      213: -8939525450284272254
+    second: AnimSheet_HamIdle_56
+  - first:
+      213: 3091632532667646815
+    second: AnimSheet_HamIdle_57
+  - first:
+      213: -2040024116478961032
+    second: AnimSheet_HamIdle_58
+  - first:
+      213: -3940011872921310472
+    second: AnimSheet_HamIdle_59
+  - first:
+      213: 6746896558059416264
+    second: AnimSheet_HamIdle_60
+  - first:
+      213: 8637342929270343389
+    second: AnimSheet_HamIdle_61
+  - first:
+      213: 5931512866071316613
+    second: AnimSheet_HamIdle_62
+  - first:
+      213: 8769768556266773935
+    second: AnimSheet_HamIdle_63
+  - first:
+      213: -6896955421596499451
+    second: AnimSheet_HamIdle_64
+  - first:
+      213: -4513959324470924654
+    second: AnimSheet_HamIdle_65
+  - first:
+      213: 6421929046043686531
+    second: AnimSheet_HamIdle_66
+  - first:
+      213: 1603519321955601539
+    second: AnimSheet_HamIdle_67
+  - first:
+      213: -2761723639032659622
+    second: AnimSheet_HamIdle_68
+  - first:
+      213: 4763096984704388674
+    second: AnimSheet_HamIdle_69
+  - first:
+      213: -862752992215580656
+    second: AnimSheet_HamIdle_70
+  - first:
+      213: -3362904271259760336
+    second: AnimSheet_HamIdle_71
+  - first:
+      213: -1702570008807360227
+    second: AnimSheet_HamIdle_72
+  - first:
+      213: 8482309761325605461
+    second: AnimSheet_HamIdle_73
+  - first:
+      213: -9171621901683613521
+    second: AnimSheet_HamIdle_74
+  - first:
+      213: 6606037545248054500
+    second: AnimSheet_HamIdle_75
+  - first:
+      213: 3367410528494149320
+    second: AnimSheet_HamIdle_76
+  - first:
+      213: 2257090405637548883
+    second: AnimSheet_HamIdle_77
+  - first:
+      213: -567019515856881992
+    second: AnimSheet_HamIdle_78
+  - first:
+      213: -5928075546505918518
+    second: AnimSheet_HamIdle_79
+  - first:
+      213: -7772710344530683074
+    second: AnimSheet_HamIdle_80
+  - first:
+      213: 3951923775552348975
+    second: AnimSheet_HamIdle_81
+  - first:
+      213: -5971948800763730960
+    second: AnimSheet_HamIdle_82
+  - first:
+      213: -1851333071170427780
+    second: AnimSheet_HamIdle_83
+  - first:
+      213: 1182866855417045628
+    second: AnimSheet_HamIdle_84
+  - first:
+      213: 4135518441771347175
+    second: AnimSheet_HamIdle_85
+  - first:
+      213: 896191955518585354
+    second: AnimSheet_HamIdle_86
+  - first:
+      213: 6471396546735396197
+    second: AnimSheet_HamIdle_87
+  - first:
+      213: 8521159881845879630
+    second: AnimSheet_HamIdle_88
+  - first:
+      213: 1080584249140245092
+    second: AnimSheet_HamIdle_89
+  - first:
+      213: -6454195049341939917
+    second: AnimSheet_HamIdle_90
+  - first:
+      213: -5500725474030811201
+    second: AnimSheet_HamIdle_91
+  - first:
+      213: -1077596292585615893
+    second: AnimSheet_HamIdle_92
+  - first:
+      213: -908019704342383108
+    second: AnimSheet_HamIdle_93
+  - first:
+      213: -3529571920139847676
+    second: AnimSheet_HamIdle_94
+  - first:
+      213: -2233457381393716087
+    second: AnimSheet_HamIdle_95
+  - first:
+      213: -1679451411558890878
+    second: AnimSheet_HamIdle_96
+  - first:
+      213: 4041005986053560277
+    second: AnimSheet_HamIdle_97
+  - first:
+      213: 8614777292865725640
+    second: AnimSheet_HamIdle_98
+  - first:
+      213: 6938263711726711483
+    second: AnimSheet_HamIdle_99
+  - first:
+      213: -4839468009680777830
+    second: AnimSheet_HamIdle_100
+  - first:
+      213: 1968950389579511877
+    second: AnimSheet_HamIdle_101
+  - first:
+      213: -4523259887570780819
+    second: AnimSheet_HamIdle_102
+  - first:
+      213: 7445844673102256810
+    second: AnimSheet_HamIdle_103
+  - first:
+      213: -8833814404844231417
+    second: AnimSheet_HamIdle_104
+  - first:
+      213: -1903038142748005184
+    second: AnimSheet_HamIdle_105
+  - first:
+      213: 2944542931717711169
+    second: AnimSheet_HamIdle_106
+  - first:
+      213: -5453851899491124242
+    second: AnimSheet_HamIdle_107
+  - first:
+      213: -1422837355959900080
+    second: AnimSheet_HamIdle_108
+  - first:
+      213: 440081146911300823
+    second: AnimSheet_HamIdle_109
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69f1937feb2f3ea0800000000000000
+      internalID: -5890941480141194900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4c2fc9601786350800000000000000
+      internalID: 6010177975942825138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429825368bdb15340800000000000000
+      internalID: 4850866873292720420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130d575379c7442b0800000000000000
+      internalID: -5601215047663235023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b43682a2f70950c0800000000000000
+      internalID: -4586626006809955143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aabb075105ee6d00800000000000000
+      internalID: 967962763849349797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78cfdbd083f17bd50800000000000000
+      internalID: 6752900491874532487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfe8acee187fc100800000000000000
+      internalID: 130454988431880124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e9fd8ac517e8ab0800000000000000
+      internalID: -5003937493177885117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70411a0e5c889cfb0800000000000000
+      internalID: -4627016758687886329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9d3feff5d0a0020800000000000000
+      internalID: 2308672464931248566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3442d4a43279360e0800000000000000
+      internalID: -2277810808693119933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e7d696889612170800000000000000
+      internalID: 8151912835122560540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc23d666357f7960800000000000000
+      internalID: 7601923572538485958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d44cec1fad8acc40800000000000000
+      internalID: 5533390875422115027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1501df5f0320060800000000000000
+      internalID: 6918145810665329127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63b028b38f09c910800000000000000
+      internalID: 1858033379671323500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e332c60fa891f89b0800000000000000
+      internalID: -5075810170493459650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_18
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b679598edb6874980800000000000000
+      internalID: -8554720816957909141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_19
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c442ef1a3c0356960800000000000000
+      internalID: 7594529963424752716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e233318fef8ec30800000000000000
+      internalID: 4389038178300014195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_21
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6834ed4d8b7d9b7a0800000000000000
+      internalID: -6360815809838824570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79782247250e57d0800000000000000
+      internalID: -2927897041572431489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_23
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2410bcd45e4c250800000000000000
+      internalID: 5964143928826479274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5734aae3efe3621d0800000000000000
+      internalID: -3375941608973646987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_25
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0eb944d6ae6fc70800000000000000
+      internalID: 9004642259997286585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa1d72bd24418b40800000000000000
+      internalID: 5440704787899030256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_27
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370355508c0f3cf80800000000000000
+      internalID: -8087355763953684365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5e786fbe53ffaa0800000000000000
+      internalID: -6125117680630897209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_29
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa228c023d8ba8e00800000000000000
+      internalID: 1047853080244658863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_30
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0723ec76e6900ca0800000000000000
+      internalID: -6052671982504040691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_31
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394a32688cd99f4c0800000000000000
+      internalID: -4253194888505219949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_32
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5373bc005b7d220e0800000000000000
+      internalID: -2296035687603161291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_33
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa666d7a3cc56e740800000000000000
+      internalID: 5180930416740558511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_34
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e8edd42299eafd0800000000000000
+      internalID: -2328755584689598967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_35
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d0812de3227f9b0800000000000000
+      internalID: -5046527204237243009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_36
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e037a2bed427bcaf0800000000000000
+      internalID: -375080464971828466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_37
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac912a36d8cb1ea90800000000000000
+      internalID: -7286335406660773430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_38
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1768c126fbb2c5b0800000000000000
+      internalID: -5349506741559597285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_39
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5d561d1382618b0800000000000000
+      internalID: -5181910126811556369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_40
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b774752e09bac3d70800000000000000
+      internalID: 9024276392104642427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_41
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96395468afaf86760800000000000000
+      internalID: 7451481537385960297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_42
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9ed7554009b46b0800000000000000
+      internalID: -5310992987264783943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_43
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea89ee32489a15b0800000000000000
+      internalID: -5396833793159361810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb26ef0cbba57830800000000000000
+      internalID: 4068346662608055262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_45
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b375bd0890bed6bd0800000000000000
+      internalID: -2635191780892780741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72fb7fe7f1c61ba0800000000000000
+      internalID: -6118489773117279622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_47
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d207edcd47727b60800000000000000
+      internalID: 7742381885453959895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f07120f627a64c8f0800000000000000
+      internalID: -521174617146910961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_49
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df7429c86aa1c590800000000000000
+      internalID: -7655650524525199399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_50
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8a3befeaadaddf0800000000000000
+      internalID: -154570792058509120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_51
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a160d18c121d3240800000000000000
+      internalID: 4772991093728895397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_52
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ab47c27785d5d30800000000000000
+      internalID: 4421787678017894984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_53
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3652160188e7134d0800000000000000
+      internalID: -3156602740954552989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_54
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2b15c931079c6c0800000000000000
+      internalID: -4122640754351688981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_55
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794b41e8a191ed760800000000000000
+      internalID: 7484447232579908759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_56
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285fd3377fc60f380800000000000000
+      internalID: -8939525450284272254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_57
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5342b5886fa7ea20800000000000000
+      internalID: 3091632532667646815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_58
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a9a04efd060b3e0800000000000000
+      internalID: -2040024116478961032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_59
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fa24bf93144259c0800000000000000
+      internalID: -3940011872921310472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_60
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8caef674caac1ad50800000000000000
+      internalID: 6746896558059416264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_61
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6046ea1a10ed770800000000000000
+      internalID: 8637342929270343389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_62
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58807d27687f05250800000000000000
+      internalID: 5931512866071316613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_63
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faddba6a90a74b970800000000000000
+      internalID: 8769768556266773935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_64
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5024900f5971940a0800000000000000
+      internalID: -6896955421596499451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_65
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a295e09e13b51c0800000000000000
+      internalID: -4513959324470924654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386723a41764f1950800000000000000
+      internalID: 6421929046043686531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_67
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38c83a7d358d04610800000000000000
+      internalID: 1603519321955601539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_68
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51c8a78bf26ca9d0800000000000000
+      internalID: -2761723639032659622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e0a0cb87be91240800000000000000
+      internalID: 4763096984704388674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010c51289b2e604f0800000000000000
+      internalID: -862752992215580656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_71
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0390be9f1609451d0800000000000000
+      internalID: -3362904271259760336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_72
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19bdcbf8914f58e0800000000000000
+      internalID: -1702570008807360227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_73
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55224a669c737b570800000000000000
+      internalID: 8482309761325605461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_74
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0a4f7497ad7b080800000000000000
+      internalID: -9171621901683613521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_75
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec5769a52c5dab50800000000000000
+      internalID: 6606037545248054500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_76
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ceddcbc8027bbe20800000000000000
+      internalID: 3367410528494149320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_77
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35be7fde3cbc25f10800000000000000
+      internalID: 2257090405637548883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_78
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6f2a821ca8128f0800000000000000
+      internalID: -567019515856881992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_79
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7c5d0e2be3bbda0800000000000000
+      internalID: -5928075546505918518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_80
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b9e3c8f19c12490800000000000000
+      internalID: -7772710344530683074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_81
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23e7355cbd08d630800000000000000
+      internalID: 3951923775552348975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_82
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f368a9d4306f1da0800000000000000
+      internalID: -5971948800763730960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_83
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7424fb616ebe46e0800000000000000
+      internalID: -1851333071170427780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_84
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7267bd43236a6010800000000000000
+      internalID: 1182866855417045628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_85
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecabd3ac10546930800000000000000
+      internalID: 4135518441771347175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_86
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a7f37d5d9ef6c00800000000000000
+      internalID: 896191955518585354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_87
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5655ad05fd40fc950800000000000000
+      internalID: 6471396546735396197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43bbb7f3cd314670800000000000000
+      internalID: 8521159881845879630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_89
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462f2ef36a10ffe00800000000000000
+      internalID: 1080584249140245092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_90
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f83e46cc71e66a0800000000000000
+      internalID: -6454195049341939917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_91
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb78371535f79a3b0800000000000000
+      internalID: -5500725474030811201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed082991eb9b01f0800000000000000
+      internalID: -1077596292585615893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_93
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5fd99c3e01663f0800000000000000
+      internalID: -908019704342383108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_94
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 408fed20a01740fc0800000000000000
+      internalID: -3529571920139847676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_95
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98cad01585a2101e0800000000000000
+      internalID: -2233457381393716087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_96
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282018cd6d361b8e0800000000000000
+      internalID: -1679451411558890878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_97
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d713fdb889841830800000000000000
+      internalID: 4041005986053560277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_98
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4ec580e46dd8770800000000000000
+      internalID: 8614777292865725640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_99
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb23477d51aa94060800000000000000
+      internalID: 6938263711726711483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_100
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d4c1d5c71c6dcb0800000000000000
+      internalID: -4839468009680777830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_101
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548f04782fd135b10800000000000000
+      internalID: 1968950389579511877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_102
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6df196f8172a31c0800000000000000
+      internalID: -4523259887570780819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_103
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa9ef8c744f45760800000000000000
+      internalID: 7445844673102256810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_104
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705e7833a9cf76580800000000000000
+      internalID: -8833814404844231417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_105
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc6c7354ec0795e0800000000000000
+      internalID: -1903038142748005184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_106
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145ebee023e1dd820800000000000000
+      internalID: 2944542931717711169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_107
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebfd39d7960054b0800000000000000
+      internalID: -5453851899491124242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_108
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058aad896f0114ce0800000000000000
+      internalID: -1422837355959900080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimSheet_HamIdle_109
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc9ef1b87b7b1600800000000000000
+      internalID: 440081146911300823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7ab66c899ecd7c06fa3f5d1b32991baa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":22.0,"y":5.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      AnimSheet_HamIdle_0: -5890941480141194900
+      AnimSheet_HamIdle_1: 6010177975942825138
+      AnimSheet_HamIdle_10: 2308672464931248566
+      AnimSheet_HamIdle_100: -4839468009680777830
+      AnimSheet_HamIdle_101: 1968950389579511877
+      AnimSheet_HamIdle_102: -4523259887570780819
+      AnimSheet_HamIdle_103: 7445844673102256810
+      AnimSheet_HamIdle_104: -8833814404844231417
+      AnimSheet_HamIdle_105: -1903038142748005184
+      AnimSheet_HamIdle_106: 2944542931717711169
+      AnimSheet_HamIdle_107: -5453851899491124242
+      AnimSheet_HamIdle_108: -1422837355959900080
+      AnimSheet_HamIdle_109: 440081146911300823
+      AnimSheet_HamIdle_11: -2277810808693119933
+      AnimSheet_HamIdle_12: 8151912835122560540
+      AnimSheet_HamIdle_13: 7601923572538485958
+      AnimSheet_HamIdle_14: 5533390875422115027
+      AnimSheet_HamIdle_15: 6918145810665329127
+      AnimSheet_HamIdle_16: 1858033379671323500
+      AnimSheet_HamIdle_17: -5075810170493459650
+      AnimSheet_HamIdle_18: -8554720816957909141
+      AnimSheet_HamIdle_19: 7594529963424752716
+      AnimSheet_HamIdle_2: 4850866873292720420
+      AnimSheet_HamIdle_20: 4389038178300014195
+      AnimSheet_HamIdle_21: -6360815809838824570
+      AnimSheet_HamIdle_22: -2927897041572431489
+      AnimSheet_HamIdle_23: 5964143928826479274
+      AnimSheet_HamIdle_24: -3375941608973646987
+      AnimSheet_HamIdle_25: 9004642259997286585
+      AnimSheet_HamIdle_26: 5440704787899030256
+      AnimSheet_HamIdle_27: -8087355763953684365
+      AnimSheet_HamIdle_28: -6125117680630897209
+      AnimSheet_HamIdle_29: 1047853080244658863
+      AnimSheet_HamIdle_3: -5601215047663235023
+      AnimSheet_HamIdle_30: -6052671982504040691
+      AnimSheet_HamIdle_31: -4253194888505219949
+      AnimSheet_HamIdle_32: -2296035687603161291
+      AnimSheet_HamIdle_33: 5180930416740558511
+      AnimSheet_HamIdle_34: -2328755584689598967
+      AnimSheet_HamIdle_35: -5046527204237243009
+      AnimSheet_HamIdle_36: -375080464971828466
+      AnimSheet_HamIdle_37: -7286335406660773430
+      AnimSheet_HamIdle_38: -5349506741559597285
+      AnimSheet_HamIdle_39: -5181910126811556369
+      AnimSheet_HamIdle_4: -4586626006809955143
+      AnimSheet_HamIdle_40: 9024276392104642427
+      AnimSheet_HamIdle_41: 7451481537385960297
+      AnimSheet_HamIdle_42: -5310992987264783943
+      AnimSheet_HamIdle_43: -5396833793159361810
+      AnimSheet_HamIdle_44: 4068346662608055262
+      AnimSheet_HamIdle_45: -2635191780892780741
+      AnimSheet_HamIdle_46: -6118489773117279622
+      AnimSheet_HamIdle_47: 7742381885453959895
+      AnimSheet_HamIdle_48: -521174617146910961
+      AnimSheet_HamIdle_49: -7655650524525199399
+      AnimSheet_HamIdle_5: 967962763849349797
+      AnimSheet_HamIdle_50: -154570792058509120
+      AnimSheet_HamIdle_51: 4772991093728895397
+      AnimSheet_HamIdle_52: 4421787678017894984
+      AnimSheet_HamIdle_53: -3156602740954552989
+      AnimSheet_HamIdle_54: -4122640754351688981
+      AnimSheet_HamIdle_55: 7484447232579908759
+      AnimSheet_HamIdle_56: -8939525450284272254
+      AnimSheet_HamIdle_57: 3091632532667646815
+      AnimSheet_HamIdle_58: -2040024116478961032
+      AnimSheet_HamIdle_59: -3940011872921310472
+      AnimSheet_HamIdle_6: 6752900491874532487
+      AnimSheet_HamIdle_60: 6746896558059416264
+      AnimSheet_HamIdle_61: 8637342929270343389
+      AnimSheet_HamIdle_62: 5931512866071316613
+      AnimSheet_HamIdle_63: 8769768556266773935
+      AnimSheet_HamIdle_64: -6896955421596499451
+      AnimSheet_HamIdle_65: -4513959324470924654
+      AnimSheet_HamIdle_66: 6421929046043686531
+      AnimSheet_HamIdle_67: 1603519321955601539
+      AnimSheet_HamIdle_68: -2761723639032659622
+      AnimSheet_HamIdle_69: 4763096984704388674
+      AnimSheet_HamIdle_7: 130454988431880124
+      AnimSheet_HamIdle_70: -862752992215580656
+      AnimSheet_HamIdle_71: -3362904271259760336
+      AnimSheet_HamIdle_72: -1702570008807360227
+      AnimSheet_HamIdle_73: 8482309761325605461
+      AnimSheet_HamIdle_74: -9171621901683613521
+      AnimSheet_HamIdle_75: 6606037545248054500
+      AnimSheet_HamIdle_76: 3367410528494149320
+      AnimSheet_HamIdle_77: 2257090405637548883
+      AnimSheet_HamIdle_78: -567019515856881992
+      AnimSheet_HamIdle_79: -5928075546505918518
+      AnimSheet_HamIdle_8: -5003937493177885117
+      AnimSheet_HamIdle_80: -7772710344530683074
+      AnimSheet_HamIdle_81: 3951923775552348975
+      AnimSheet_HamIdle_82: -5971948800763730960
+      AnimSheet_HamIdle_83: -1851333071170427780
+      AnimSheet_HamIdle_84: 1182866855417045628
+      AnimSheet_HamIdle_85: 4135518441771347175
+      AnimSheet_HamIdle_86: 896191955518585354
+      AnimSheet_HamIdle_87: 6471396546735396197
+      AnimSheet_HamIdle_88: 8521159881845879630
+      AnimSheet_HamIdle_89: 1080584249140245092
+      AnimSheet_HamIdle_9: -4627016758687886329
+      AnimSheet_HamIdle_90: -6454195049341939917
+      AnimSheet_HamIdle_91: -5500725474030811201
+      AnimSheet_HamIdle_92: -1077596292585615893
+      AnimSheet_HamIdle_93: -908019704342383108
+      AnimSheet_HamIdle_94: -3529571920139847676
+      AnimSheet_HamIdle_95: -2233457381393716087
+      AnimSheet_HamIdle_96: -1679451411558890878
+      AnimSheet_HamIdle_97: 4041005986053560277
+      AnimSheet_HamIdle_98: 8614777292865725640
+      AnimSheet_HamIdle_99: 6938263711726711483
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
