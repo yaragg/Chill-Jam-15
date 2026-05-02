@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LTube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8169908900584323242, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
+      propertyPath: CanBeMoved
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8275598973893239305, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9
@@ -74,6 +78,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LTube
       objectReference: {fileID: 0}
+    - target: {fileID: 8169908900584323242, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
+      propertyPath: CanBeMoved
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8275598973893239305, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9
@@ -135,6 +143,10 @@ PrefabInstance:
     - target: {fileID: 6440942404359892228, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: m_Name
       value: LTube (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169908900584323242, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
+      propertyPath: CanBeMoved
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8275598973893239305, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -238,6 +250,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545282483420089548, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
+      propertyPath: CanBeMoved
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -259,6 +275,10 @@ PrefabInstance:
     - target: {fileID: 6669199772685423250, guid: f34786ac4869a294d8dade374b325708, type: 3}
       propertyPath: m_Name
       value: TTube
+      objectReference: {fileID: 0}
+    - target: {fileID: 8398733909104887612, guid: f34786ac4869a294d8dade374b325708, type: 3}
+      propertyPath: CanBeMoved
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8590552851265527199, guid: f34786ac4869a294d8dade374b325708, type: 3}
       propertyPath: m_LocalPosition.x
@@ -362,6 +382,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545282483420089548, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
+      propertyPath: CanBeMoved
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -383,6 +407,10 @@ PrefabInstance:
     - target: {fileID: 6440942404359892228, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: m_Name
       value: LTube (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169908900584323242, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
+      propertyPath: CanBeMoved
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8275598973893239305, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -486,6 +514,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545282483420089548, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
+      propertyPath: CanBeMoved
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -507,6 +539,10 @@ PrefabInstance:
     - target: {fileID: 6669199772685423250, guid: f34786ac4869a294d8dade374b325708, type: 3}
       propertyPath: m_Name
       value: TTube (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8398733909104887612, guid: f34786ac4869a294d8dade374b325708, type: 3}
+      propertyPath: CanBeMoved
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8590552851265527199, guid: f34786ac4869a294d8dade374b325708, type: 3}
       propertyPath: m_LocalPosition.x
