@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab6a4ecdaac9694d8af6e7c0cf45978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FrameAnimator
-  StartingAnimation: 
+  StartingAnimation: idle
   Animations:
   - name: float
     frameDuration: 80
@@ -139,6 +139,32 @@ MonoBehaviour:
     - {fileID: -1302040906053349106, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
     - {fileID: 6872224348498416793, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
     - {fileID: 4204293032371533300, guid: 94512f4baac0d4c529ce4e459f2468ba, type: 3}
+  - name: idle
+    frameDuration: 100
+    shouldLoop: 1
+    frames:
+    - {fileID: -5890941480141194900, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 6010177975942825138, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 4850866873292720420, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: -5601215047663235023, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: -4586626006809955143, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 967962763849349797, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 6752900491874532487, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 130454988431880124, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: -5003937493177885117, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: -4627016758687886329, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 2308672464931248566, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: -2277810808693119933, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 8151912835122560540, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 7601923572538485958, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 5533390875422115027, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 6918145810665329127, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 1858033379671323500, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: -5075810170493459650, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: -8554720816957909141, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 7594529963424752716, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: 4389038178300014195, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
+    - {fileID: -6360815809838824570, guid: 73b78fa81e8af5a2cbf6c048d40b0dc8, type: 3}
 --- !u!1 &2270142509756156873
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hamster
   spriteTransform: {fileID: 374772116168022581}
+  PathDurationPerTube: 0.4
 --- !u!58 &7749762537291561857
 CircleCollider2D:
   m_ObjectHideFlags: 0
