@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using deVoid.Utils;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : Manager<GameManager>
@@ -31,6 +32,16 @@ public class GameManager : Manager<GameManager>
 
         yield return null;
     }
+
+#if UNITY_EDITOR
+    private void Update()
+    {
+        if (Keyboard.current.sKey.wasPressedThisFrame)
+        {
+            StartNextPuzzle();
+        }
+    }
+#endif
 
     private void HandleSceneChange(Scene scene)
     {
