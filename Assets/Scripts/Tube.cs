@@ -136,6 +136,8 @@ public class Tube : MonoBehaviour
 
     private void HandleRotate(Vector2 clickWorldPosition)
     {
+        if (TubeManager.Instance.CurrentTube != null && TubeManager.Instance.CurrentTube != this) return;
+        
         if (!_isRotating && CanBeRotated && _tileCollider.OverlapPoint(clickWorldPosition))
         {
             _isRotating = true;
@@ -145,12 +147,14 @@ public class Tube : MonoBehaviour
 
     public void StartMove()
     {
+        TubeManager.Instance.SetCurrentTube(this);
         _isBeingMoved = true;
         TubeRenderer.sortingOrder = 2;
     }
 
     public void EndMove()
     {
+        TubeManager.Instance.SetCurrentTube(null);
         _isBeingMoved = false;
         transform.position = TubeManager.Instance.TubeGrid.SnapPositionToGrid(transform.position);
         TubeRenderer.sortingOrder = -1;

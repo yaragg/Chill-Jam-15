@@ -8,6 +8,7 @@ public class TubeManager : Manager<TubeManager>
     public List<Tube> Entrances { get; private set; } = new();
     public Tube Exit { get; private set;}
     public TubeGrid TubeGrid {get; private set;}
+    public Tube CurrentTube {get; private set;}
 
     [Foldout("Internal Config")]
     public GameObject ITubePrefab;
@@ -33,6 +34,11 @@ public class TubeManager : Manager<TubeManager>
     public void SetGrid(TubeGrid grid)
     {
         TubeGrid = grid;
+    }
+
+    public void SetCurrentTube (Tube tube)
+    {
+        CurrentTube = tube;
     }
 
     public void StartPuzzle ()
