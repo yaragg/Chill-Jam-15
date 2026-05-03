@@ -139,7 +139,7 @@ MonoBehaviour:
   StartingAnimation: default
   Animations:
   - name: default
-    frameDuration: 5
+    frameDuration: 12
     shouldLoop: 0
     frames:
     - {fileID: -5147675033412359254, guid: 052ad0e0e5c261a0e8f3e35ab5eea2ae, type: 3}
