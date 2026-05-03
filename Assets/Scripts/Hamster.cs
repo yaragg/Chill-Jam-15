@@ -79,7 +79,11 @@ public class Hamster : MonoBehaviour
 
     private void HandleEndOfPath (Tube tube)
     {
-        if (tube.IsExit) _frameAnimator.Play("celebrate");
+        if (tube.IsExit)
+        {
+            _frameAnimator.Play("celebrate");
+            spriteTransform.rotation = Quaternion.identity;        
+        }
         else
         {
             GameObject exclamation = Instantiate(exclamationPrefab, transform.position + Vector3.up * 0.5f, Quaternion.identity);
@@ -92,6 +96,7 @@ public class Hamster : MonoBehaviour
     {
         // Hamsters are on their own collision layer, so we know without checking that this is a valid collision with another hamster
         _pathTween.Kill();
+        _frameAnimator.Play("collision");
         Signals.Get<HamsterArrivedSignal>().Dispatch(false);
 
         Utils.LogMessage(this, $"collided with {collision.gameObject.name}");
