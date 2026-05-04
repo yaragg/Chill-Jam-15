@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,11 +10,14 @@ public class MainMenu : MonoBehaviour
     public GameObject creditsPopup;
     public List<Button> mainButtons;
     public Button backButton;
+    public TMP_Text versionText;
 
     public void Start()
     {
         creditsPopup.transform.position += Screen.height * Vector3.down;
         creditsPopup.SetActive(false);
+
+        versionText.text = Application.version;
     }
 
     public void HandleExitButton()
