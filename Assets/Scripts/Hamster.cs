@@ -85,6 +85,8 @@ public class Hamster : MonoBehaviour
         if (tube.IsExit)
         {
             _collider.enabled = false;
+            float offset = Random.Range(-0.05f, 0.05f);
+            transform.DOMoveX(transform.position.x + offset, 0.2f);
             _frameAnimator.Play("celebrate");
             spriteTransform.rotation = Quaternion.identity;
         }

@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &73447432319546521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7906333320668630355}
+  m_Layer: 0
+  m_Name: TargetPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7906333320668630355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73447432319546521}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4589799640461134460}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &225080556888955923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88,6 +119,10 @@ PrefabInstance:
       propertyPath: CanBeRotated
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4545282483420089548, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
+      propertyPath: targetOverride
+      value: 
+      objectReference: {fileID: 7906333320668630355}
     - target: {fileID: 6548109505601852866, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -106,7 +141,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4372322227149887087, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7906333320668630355}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1780670418038212107, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       insertIndex: -1
@@ -129,3 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c098e65b5fd04de43adfdff4ae1b8e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoHideRenderer
+--- !u!4 &4589799640461134460 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4372322227149887087, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
+  m_PrefabInstance: {fileID: 225080556888955923}
+  m_PrefabAsset: {fileID: 0}
