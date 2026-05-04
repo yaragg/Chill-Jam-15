@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class Hamster : MonoBehaviour
 {
-    public Tube Entrance {get; private set;}
+    public Tube Entrance { get; private set; }
 
     [Foldout("Internal Config")]
     public Transform spriteTransform;
@@ -20,37 +20,40 @@ public class Hamster : MonoBehaviour
     private Vector3 _initialPosition;
     private Tween _pathTween;
     private FrameAnimator _frameAnimator;
+    private Collider2D _collider;
 
-    private void Start ()
+    private void Start()
     {
         _initialPosition = transform.position;
         _frameAnimator = GetComponentInChildren<FrameAnimator>();
+        _collider = GetComponent<Collider2D>();
         HamsterManager.Instance.RegisterHamster(this);
     }
 
-    private void OnDestroy ()
+    private void OnDestroy()
     {
         HamsterManager.Instance.UnregisterHamster(this);
     }
 
-    public void SetEntrance (Tube entrance)
+    public void SetEntrance(Tube entrance)
     {
         Entrance = entrance;
     }
 
-    public void Reset ()
+    public void Reset()
     {
         _pathTween?.Kill();
+        _collider.enabled = true;
         transform.position = _initialPosition;
         spriteTransform.rotation = Quaternion.identity;
         _frameAnimator.Play("idle");
     }
 
-    public void AnimatePath (List<Tube> path)
+    public void AnimatePath(List<Tube> path)
     {
         _prevPosition = transform.position;
 
-        void AdjustAngle ()
+        void AdjustAngle()
         {
             if (_frameAnimator.CurrentlyPlaying == "jump") return;
             spriteTransform.right = transform.position - _prevPosition;
@@ -64,7 +67,7 @@ public class Hamster : MonoBehaviour
             Utils.DelayCall(this, _frameAnimator.Duration, () => HandleEndOfPath(Entrance));
             return;
         }
-        
+
         _frameAnimator.Play("jump");
 
         Utils.DelayCall(this, _frameAnimator.Duration, () => _frameAnimator.Play("float"));
@@ -77,12 +80,13 @@ public class Hamster : MonoBehaviour
             .OnComplete(() => HandleEndOfPath(path.Last()));
     }
 
-    private void HandleEndOfPath (Tube tube)
+    private void HandleEndOfPath(Tube tube)
     {
         if (tube.IsExit)
         {
+            _collider.enabled = false;
             _frameAnimator.Play("celebrate");
-            spriteTransform.rotation = Quaternion.identity;        
+            spriteTransform.rotation = Quaternion.identity;
         }
         else
         {
