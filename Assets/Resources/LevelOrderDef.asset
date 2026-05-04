@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: LevelOrderDef
   m_EditorClassIdentifier: Assembly-CSharp::LevelOrderDef
   levels:
-  - {fileID: 11400000, guid: c95119c84079a94f29e1626cbfff0ae9, type: 2}
   - {fileID: 11400000, guid: 6bca3a9386ad1624e8f2d2c524760b28, type: 2}
   - {fileID: 11400000, guid: 7c184378732d91843940611655b9fffc, type: 2}
   - {fileID: 11400000, guid: d66a1942cfbae6d8bb9d15b11652dc90, type: 2}
@@ -23,5 +22,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9cf9f374367b52c46a4062ebb45e8be1, type: 2}
   - {fileID: 11400000, guid: 57a0eaa92a43c733faea28725936898f, type: 2}
   - {fileID: 11400000, guid: 3cc194241400bcd0080dfcb7dbb9ac4e, type: 2}
+  - {fileID: 11400000, guid: c95119c84079a94f29e1626cbfff0ae9, type: 2}
   - {fileID: 11400000, guid: 89cd0fde837b47e21a40c98afab6b913, type: 2}
   - {fileID: 11400000, guid: c0b4848673542a792958b8dd366e70f2, type: 2}
