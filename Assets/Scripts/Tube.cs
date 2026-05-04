@@ -37,7 +37,6 @@ public class Tube : MonoBehaviour
 
     private List<Collider2D> _exits = new();
     private ContactFilter2D _exitsFilter;
-    private ContactFilter2D _placementFilter;
     private bool _isBeingMoved = false;
     private bool _isRotating = false;
     private bool _wasSpawnedByPlayer = false;
@@ -67,8 +66,6 @@ public class Tube : MonoBehaviour
         _exitsFilter = new ContactFilter2D();
         _exitsFilter.SetLayerMask(LayerMask.GetMask("Tube Exits"));
         _exitsFilter.useLayerMask = true;
-
-        _placementFilter = ContactFilter2D.noFilter;
 
         _exits = GetComponentsInChildren<Collider2D>().Where(c => c.gameObject.layer == LayerMask.NameToLayer("Tube Exits")).ToList();
         _tileCollider = GetComponent<Collider2D>();
@@ -166,7 +163,7 @@ public class Tube : MonoBehaviour
 
         if (snappedPosition != null)
         {
-            RaycastHit2D[] hits = Physics2D.RaycastAll((Vector2)snappedPosition, Vector2.up * 0.2f);
+            RaycastHit2D[] hits = Physics2D.RaycastAll((Vector2)snappedPosition, Vector2.up, 0.1f);
             if (hits.Any(c => c.collider != _tileCollider && c.collider.GetComponent<Tube>() != null))
             {
                 // There's already a tube in the target spot, we can't add it
