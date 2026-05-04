@@ -54,6 +54,7 @@ MonoBehaviour:
   AccelerateSprite: {fileID: -1169497165364098897, guid: 1defd88bf488dd6fabc4c8cbba358628, type: 3}
   DecelerateSprite: {fileID: -5816791915599919357, guid: 1defd88bf488dd6fabc4c8cbba358628, type: 3}
   TubeRenderer: {fileID: 3426398422927446132}
+  poofFX: {fileID: 4659489461911929757, guid: 3655314a1aa717140b0e583235550d15, type: 3}
   MechanicRenderer: {fileID: 2251863644889840811}
   targetOverride: {fileID: 0}
   Type: 0

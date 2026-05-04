@@ -1,3 +1,4 @@
+using deVoid.Utils;
 using TMPro;
 using UnityEngine;
 
@@ -26,8 +27,15 @@ public class TubeButton : MonoBehaviour
                 break;
         }
 
+        Signals.Get<RecoverTubeSignal>().AddListener(HandleTubeDespawn);
+
         _counterText = GetComponentInChildren<TMP_Text>();
         UpdateCounterText();
+    }
+
+    void OnDestroy()
+    {
+        Signals.Get<RecoverTubeSignal>().RemoveListener(HandleTubeDespawn);
     }
 
     public void HandleClick ()
@@ -45,6 +53,15 @@ public class TubeButton : MonoBehaviour
         Vector2 position = InputManager.Instance.GetMouseWorldPosition();
         Tube tube = TubeManager.Instance.SpawnTubeAt(Type, position);
         tube.StartMove();
+    }
+
+    private void HandleTubeDespawn (Tube.TubeType type)
+    {
+        if (Type == type)
+        {
+            _usesLeft++;
+            UpdateCounterText();
+        }
     }
 
     private void UpdateCounterText()

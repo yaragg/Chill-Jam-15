@@ -502,6 +502,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1915566865533869045, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      propertyPath: Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915566865533869045, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
       propertyPath: <Mechanic>k__BackingField
       value: 0
       objectReference: {fileID: 0}

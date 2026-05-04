@@ -59,7 +59,10 @@ public class FrameAnimator : MonoBehaviour
             }
             
             if (!animationDef.shouldLoop)
+            {
+                if (animationDef.destroyAfterFinish) Destroy(gameObject);
                 break;
+            }
         }
     }
 
@@ -69,6 +72,7 @@ public class FrameAnimator : MonoBehaviour
         public string name;
         public float frameDuration;
         public bool shouldLoop = false;
+        public bool destroyAfterFinish = false;
         [ReorderableList]
         public Sprite[] frames;
     }

@@ -22,6 +22,8 @@ public class Tube : MonoBehaviour
     [Foldout("Internal Config")]
     public SpriteRenderer TubeRenderer;
     [Foldout("Internal Config")]
+    public GameObject poofFX;
+    [Foldout("Internal Config")]
     public SpriteRenderer MechanicRenderer;
     [Foldout("Internal Config")]
     public Transform targetOverride;
@@ -34,7 +36,8 @@ public class Tube : MonoBehaviour
     public bool IsRandom => Type == TubeType.Random;
 
     private List<Collider2D> _exits = new();
-    private ContactFilter2D _filter;
+    private ContactFilter2D _exitsFilter;
+    private ContactFilter2D _placementFilter;
     private bool _isBeingMoved = false;
     private bool _isRotating = false;
     private bool _wasSpawnedByPlayer = false;
@@ -61,9 +64,11 @@ public class Tube : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, 0f, randomAngle);
         }
 
-        _filter = new ContactFilter2D();
-        _filter.SetLayerMask(LayerMask.GetMask("Tube Exits"));
-        _filter.useLayerMask = true;
+        _exitsFilter = new ContactFilter2D();
+        _exitsFilter.SetLayerMask(LayerMask.GetMask("Tube Exits"));
+        _exitsFilter.useLayerMask = true;
+
+        _placementFilter = ContactFilter2D.noFilter;
 
         _exits = GetComponentsInChildren<Collider2D>().Where(c => c.gameObject.layer == LayerMask.NameToLayer("Tube Exits")).ToList();
         _tileCollider = GetComponent<Collider2D>();
@@ -137,7 +142,7 @@ public class Tube : MonoBehaviour
     private void HandleRotate(Vector2 clickWorldPosition)
     {
         if (TubeManager.Instance.CurrentTube != null && TubeManager.Instance.CurrentTube != this) return;
-        
+
         if (!_isRotating && CanBeRotated && _tileCollider.OverlapPoint(clickWorldPosition))
         {
             _isRotating = true;
@@ -156,8 +161,29 @@ public class Tube : MonoBehaviour
     {
         TubeManager.Instance.SetCurrentTube(null);
         _isBeingMoved = false;
-        transform.position = TubeManager.Instance.TubeGrid.SnapPositionToGrid(transform.position);
+        Vector2? snappedPosition = TubeManager.Instance.TubeGrid.SnapPositionToGrid(transform.position);
         TubeRenderer.sortingOrder = -1;
+
+        if (snappedPosition != null)
+        {
+            RaycastHit2D[] hits = Physics2D.RaycastAll((Vector2)snappedPosition, Vector2.up * 0.2f);
+            if (hits.Any(c => c.collider != _tileCollider && c.collider.GetComponent<Tube>() != null))
+            {
+                // There's already a tube in the target spot, we can't add it
+                PoofAway();
+                return;
+            }
+            transform.position = (Vector2)snappedPosition;
+        }
+        else PoofAway();
+    }
+
+    private void PoofAway()
+    {
+        // TODO add sound
+        Signals.Get<RecoverTubeSignal>().Dispatch(Type);
+        Instantiate(poofFX, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 
     private void UpdateMechanic()
@@ -183,7 +209,7 @@ public class Tube : MonoBehaviour
         foreach (Collider2D exit in _exits)
         {
             List<Collider2D> overlapping = new List<Collider2D>();
-            Physics2D.OverlapCollider(exit, _filter, overlapping);
+            Physics2D.OverlapCollider(exit, _exitsFilter, overlapping);
 
             foreach (Collider2D col in overlapping)
             {

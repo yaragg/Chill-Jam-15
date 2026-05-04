@@ -22,7 +22,8 @@ public class TubeGrid : MonoBehaviour
     {
         foreach (Transform child in transform)
         {
-            child.position = SnapPositionToGrid(child.position);
+            Vector2? snappedPosition = SnapPositionToGrid(child.position);
+            if (snappedPosition != null) child.position = (Vector2) snappedPosition;
         }
     }
 
@@ -31,7 +32,7 @@ public class TubeGrid : MonoBehaviour
         return Columns * (CellSize.x - Overlap.x);
     }
 
-    public Vector2 SnapPositionToGrid(Vector2 worldPosition)
+    public Vector2? SnapPositionToGrid(Vector2 worldPosition)
     {
         Vector2 localPosition = transform.InverseTransformPoint(worldPosition);
         Vector2 totalCellSize = CellSize - Overlap;
@@ -41,7 +42,7 @@ public class TubeGrid : MonoBehaviour
         if (cellX < 0 || cellX >= Columns || cellY < 0 || cellY >= Rows)
         {
             Debug.LogWarning($"Position {worldPosition} is outside the grid bounds on '{name}'.", this);
-            return worldPosition;
+            return null;
         }
 
         return transform.TransformPoint(new Vector2(cellX * totalCellSize.x, cellY * totalCellSize.y));
