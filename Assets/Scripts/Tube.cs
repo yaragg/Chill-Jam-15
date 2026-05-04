@@ -98,6 +98,13 @@ public class Tube : MonoBehaviour
     public void SetWasSpawned(bool value)
     {
         _wasSpawnedByPlayer = value;
+
+        // Keep default sprite for spawned tubes so the player can keep track of them
+        if (_wasSpawnedByPlayer)
+        {
+            SpriteRandomizer randomizer = GetComponentInChildren<SpriteRandomizer>();
+            randomizer.RestoreOriginalSprite();
+        }
     }
 
     private void RandomizeTile()

@@ -411,8 +411,36 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6310970444435571482, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2852953801038823943}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4411088866067222834, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8880072004694024743}
   m_SourcePrefab: {fileID: 100100000, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+--- !u!1 &1780670418038212107 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4411088866067222834, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
+  m_PrefabInstance: {fileID: 2702550912511563577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8880072004694024743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780670418038212107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ac948a2b13822499fd471b7e548c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteRandomizer
+  sprites:
+  - {fileID: -497520697, guid: 026322246515e5c47962abfb9b840d6e, type: 3}
+  - {fileID: -1137877226, guid: 026322246515e5c47962abfb9b840d6e, type: 3}
+  - {fileID: -541664281, guid: 026322246515e5c47962abfb9b840d6e, type: 3}
+  - {fileID: -159941712, guid: 026322246515e5c47962abfb9b840d6e, type: 3}
+  - {fileID: -1425176081, guid: 026322246515e5c47962abfb9b840d6e, type: 3}
+  - {fileID: 894701844, guid: 026322246515e5c47962abfb9b840d6e, type: 3}
+  - {fileID: 890504647, guid: 026322246515e5c47962abfb9b840d6e, type: 3}
 --- !u!4 &8220320095482319907 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6310970444435571482, guid: 856e164cc29d09341aeb2a5e78f71f8e, type: 3}
