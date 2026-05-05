@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 58645d61de39d2d50a80217cdd4059d6
+guid: 990286f08a576894487a9515b0ef0378
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2813076907442746344
-    second: Sprite_BG_Lilac_0
+      213: -7283362904289403737
+    second: Sprite_GridMarker_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,11 +46,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 0
   spriteMeshType: 0
-  alignment: 8
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 6
+  spritePivot: {x: 0, y: 0}
   spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite_BG_Lilac_0
+      name: Sprite_GridMarker_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 512
-      alignment: 0
+        width: 64
+        height: 64
+      alignment: 6
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 9, y: 8, z: 9, w: 6}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e3baf10b8e0a0720800000000000000
-      internalID: 2813076907442746344
+      spriteID: 7ac9297070c4cea90800000000000000
+      internalID: -7283362904289403737
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sprite_BG_Lilac_0: 2813076907442746344
+      Sprite_GridMarker_0: -7283362904289403737
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

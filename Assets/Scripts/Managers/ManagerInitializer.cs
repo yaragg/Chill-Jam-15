@@ -33,6 +33,6 @@ public class ManagerInitializer : MonoBehaviour
         }
         #endif
 
-        SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene("MainMenu");
     }
 }

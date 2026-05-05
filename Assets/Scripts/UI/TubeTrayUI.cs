@@ -43,4 +43,9 @@ public class TubeTrayUI : MonoBehaviour
             Signals.Get<SimulationResetSignal>().Dispatch();
         }
     }
+
+    public void HandleReturnPressed ()
+    {
+        GameManager.Instance.GoToMainMenu();
+    }
 }

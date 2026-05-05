@@ -5,30 +5,48 @@ public class GameAudioClip : MonoBehaviour
 {
     public AudioClip clip;
     public string Tag;
-    public float fadeOutSecs = 0f;
-    public AudioSource AudioSrc {get; private set;}
-    public bool IsLooping {get => AudioSrc.loop; set => AudioSrc.loop = value;}
+    public AudioSource AudioSrc { get; private set; }
+    public bool IsLooping { get => AudioSrc.loop; set => AudioSrc.loop = value; }
 
+    private float _fadeOutSecs = 0f;
     private bool _hasStartedPlaying = false;
+    private float _bgmVolume = 0.9f;
 
-    public void Awake ()
+    public void Awake()
     {
         AudioSrc = gameObject.AddComponent<AudioSource>();
         AudioSrc.clip = clip;
+
+        gameObject.name = clip.name;
+
+        if (tag == "bgm")
+        {
+            // Ugly game jam haxx until we implement mixers
+            AudioSrc.volume = _bgmVolume;
+        }
     }
 
-    public void Play ()
+    public void Play()
     {
         AudioSrc.Play();
     }
 
-    public void SetClip (AudioClip clip)
+    public void SetFadeoutSecs(float secs)
+    {
+        if (tag == "bgm" && _fadeOutSecs > 0 && secs == 0f)
+        {
+            AudioSrc.volume = _bgmVolume;
+        }
+        _fadeOutSecs = secs;
+    }
+
+    public void SetClip(AudioClip clip)
     {
         this.clip = clip;
         AudioSrc.clip = clip;
     }
 
-    private void LateUpdate ()
+    private void LateUpdate()
     {
         float timeLeft = clip.length - AudioSrc.time;
         if (_hasStartedPlaying && !AudioSrc.loop && timeLeft <= 0f)
@@ -38,13 +56,13 @@ public class GameAudioClip : MonoBehaviour
 
         if (AudioSrc.isPlaying) _hasStartedPlaying = true;
 
-        if (fadeOutSecs > 0f && timeLeft <= fadeOutSecs)
+        if (_fadeOutSecs > 0f && timeLeft <= _fadeOutSecs)
         {
-            AudioSrc.volume -= Time.deltaTime / fadeOutSecs;
+            AudioSrc.volume -= Time.deltaTime / _fadeOutSecs;
         }
     }
 
-    private void HandleClipEnd ()
+    private void HandleClipEnd()
     {
         Signals.Get<AudioEndedSignal>().Dispatch(clip.name, Tag);
         Destroy(gameObject);

@@ -21,8 +21,11 @@ public class AudioManager : Manager<AudioManager>
         return base.Initialize();
     }
 
-    public GameAudioClip Play (string clipName, string tag = "")
+    public GameAudioClip Play(string clipName, string tag = "", bool forceStart = false)
     {
+        GameAudioClip previousClip = GetCurrentClipByName(clipName);
+        if (!forceStart && previousClip != null) return previousClip;
+
         if (audioClips.TryGetValue(clipName, out AudioClip clip))
         {
             GameObject go = new();
@@ -30,11 +33,6 @@ public class AudioManager : Manager<AudioManager>
             GameAudioClip gAudioClip = go.AddComponent<GameAudioClip>();
             gAudioClip.SetClip(clip);
             gAudioClip.Tag = tag;
-            if (tag == "bgm")
-            {
-                // Ugly game jam haxx until we implement mixers
-                gAudioClip.AudioSrc.volume = 0.9f;
-            }
             gAudioClip.Play();
             currentClips.Add(gAudioClip);
             return gAudioClip;
@@ -46,29 +44,30 @@ public class AudioManager : Manager<AudioManager>
         }
     }
 
-    public void Stop (string tag)
+    public void Stop(string tag)
     {
         GetCurrentClipsByTag(tag).ForEach(c => c.AudioSrc.Stop());
     }
 
-    public bool IsPlaying (string clipName)
+    public bool IsPlaying(string clipName)
     {
-        return currentClips.Any(c => c.name == clipName && c.AudioSrc.isPlaying);
+        return currentClips.Any(c => c.clip.name == clipName && c.AudioSrc.isPlaying);
     }
 
-    public List<GameAudioClip> GetCurrentClipsByTag (string tag = "")
+    public List<GameAudioClip> GetCurrentClipsByTag(string tag = "")
     {
         return currentClips.Where(c => c.Tag == tag).ToList();
     }
 
-    private void HandleAudioEnded (string clipName, string tag)
+    public GameAudioClip GetCurrentClipByName(string clipName)
     {
-        currentClips = currentClips.Where(c => c != null && !c.IsDestroyed()).ToList();
+        return currentClips.Find(c => c.clip.name == clipName);
     }
 
-    [Button("Test")]
-    private void Test()
+    private void HandleAudioEnded(string clipName, string tag)
     {
-        Play("mysterious").fadeOutSecs = 10f;
+        currentClips = currentClips.Where(c => !c.IsUnityNull() && !c.IsDestroyed()).ToList();
     }
+
+
 }

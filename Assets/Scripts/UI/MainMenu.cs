@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     public List<Button> mainButtons;
     public Button backButton;
     public TMP_Text versionText;
+    public string bgmName = "HoliznaCC0 - Level 1";
 
     public void Start()
     {
@@ -19,9 +20,10 @@ public class MainMenu : MonoBehaviour
 
         versionText.text = Application.version;
 
-        AudioManager.Instance.Stop("bgm");
-        GameAudioClip bgm = AudioManager.Instance.Play("HoliznaCC0 - Level 1", "bgm");
+        if (!AudioManager.Instance.IsPlaying(bgmName)) AudioManager.Instance.Stop("bgm");
+        GameAudioClip bgm = AudioManager.Instance.Play(bgmName, "bgm");
         bgm.IsLooping = true;
+        bgm.SetFadeoutSecs(0f);
     }
 
     public void HandleExitButton()

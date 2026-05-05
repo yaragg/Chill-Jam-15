@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New game
+  m_text: Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8dc95e90e3c9be8bf891f6997077859b, type: 2}
   m_sharedMaterial: {fileID: 6915531264204563221, guid: 8dc95e90e3c9be8bf891f6997077859b, type: 2}
@@ -2388,6 +2388,7 @@ MonoBehaviour:
   - {fileID: 2047629704}
   backButton: {fileID: 1566968996}
   versionText: {fileID: 392737261}
+  bgmName: HoliznaCC0 - Level 1
 --- !u!4 &1332052494
 Transform:
   m_ObjectHideFlags: 0

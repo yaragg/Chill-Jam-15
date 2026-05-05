@@ -56,12 +56,9 @@ public class GameManager : Manager<GameManager>
         Utils.LogMessage(this, $"scene {scene.name} {GameSceneName}");
         if (scene.name == GameSceneName)
         {
-            List<GameAudioClip> clips = AudioManager.Instance.GetCurrentClipsByTag("bgm");
-            GameAudioClip bgm;
-            if (clips.Count > 0) bgm = clips.First();
-            else bgm = AudioManager.Instance.Play(gameplayAudios.First(), "bgm");
+            GameAudioClip bgm = AudioManager.Instance.Play(gameplayAudios.First(), "bgm");
             bgm.IsLooping = false;
-                bgm.fadeOutSecs = _fadeoutDuration;
+            bgm.SetFadeoutSecs(_fadeoutDuration);
             SetupFromLevel();
         }
     }
@@ -74,7 +71,7 @@ public class GameManager : Manager<GameManager>
             gameplayAudios.RemoveAt(0);
             gameplayAudios.Add(previous);
             GameAudioClip bgm = AudioManager.Instance.Play(gameplayAudios.First(), "bgm");
-            bgm.fadeOutSecs = _fadeoutDuration;
+            bgm.SetFadeoutSecs(_fadeoutDuration);
         }
     }
 
@@ -82,10 +79,8 @@ public class GameManager : Manager<GameManager>
     {
         SetupGrid();
 
-#if UNITY_EDITOR
         ObjectIdentifier levelTitle = ObjectManager.Instance.GetObject("level");
-        if (levelTitle != null) levelTitle.GetComponent<TMP_Text>().text = $"Level: {GetCurrentLevelDef().GetName()}";
-#endif
+        if (levelTitle != null) levelTitle.GetComponent<TMP_Text>().text = GetCurrentLevelDef().GetName();
 
         int numFloors = 5;
         // Remove assets and hamsters from unused entrance floors
@@ -180,6 +175,7 @@ public class GameManager : Manager<GameManager>
         _levelIndex++;
         if (_levelIndex >= _levelOrderDef.levels.Count)
         {
+            _levelIndex = 0;
             SceneManager.LoadScene(EndSceneName);
             return;
         }
@@ -188,6 +184,11 @@ public class GameManager : Manager<GameManager>
         TubeManager.Instance.Reset();
         SceneManager.LoadScene(GameSceneName);
         IsSimulationRunning = false;
+    }
+
+    public void GoToMainMenu ()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     private void ResetPuzzle()

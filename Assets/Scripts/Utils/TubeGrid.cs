@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using NaughtyAttributes;
 using UnityEngine;
 
@@ -12,9 +14,15 @@ public class TubeGrid : MonoBehaviour
     public Vector2 Overlap = Vector2.zero;
     public Vector3 Offset = new Vector3(0.5f, 0.5f, 0f);
 
+    [Foldout("Internal Config")]
+    public GameObject _gridVisuals;
+
     void Start()
     {
         TubeManager.Instance.SetGrid(this);
+        
+        List<SpriteRenderer> gridParts = _gridVisuals.GetComponentsInChildren<SpriteRenderer>().ToList();
+        gridParts.ForEach(s => s.size = new Vector2(Columns, Rows));
     }
 
     [Button("Snap To Grid")]
