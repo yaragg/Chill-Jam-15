@@ -2212,6 +2212,7 @@ GameObject:
   - component: {fileID: 960537118}
   - component: {fileID: 960537117}
   - component: {fileID: 960537116}
+  - component: {fileID: 960537119}
   m_Layer: 5
   m_Name: SimulationButton
   m_TagString: Untagged
@@ -2332,6 +2333,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960537114}
   m_CullTransparentMesh: 1
+--- !u!114 &960537119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960537114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2109d87b5e3a89a4db48558f92e24d6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButton
 --- !u!1 &982224378
 GameObject:
   m_ObjectHideFlags: 0

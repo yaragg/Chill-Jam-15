@@ -30,6 +30,11 @@ public class AudioManager : Manager<AudioManager>
             GameAudioClip gAudioClip = go.AddComponent<GameAudioClip>();
             gAudioClip.SetClip(clip);
             gAudioClip.Tag = tag;
+            if (tag == "bgm")
+            {
+                // Ugly game jam haxx until we implement mixers
+                gAudioClip.AudioSrc.volume = 0.9f;
+            }
             gAudioClip.Play();
             currentClips.Add(gAudioClip);
             return gAudioClip;

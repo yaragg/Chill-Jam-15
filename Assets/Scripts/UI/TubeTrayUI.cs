@@ -36,15 +36,11 @@ public class TubeTrayUI : MonoBehaviour
         {
             Signals.Get<SimulationStartSignal>().Dispatch();
             playButton.image.sprite = stopButtonSprite;
+            _isShowingPlayButton = false;
         }
         else
         {
             Signals.Get<SimulationResetSignal>().Dispatch();
-            playButton.image.sprite = playButtonSprite;
         }
-
-        _isShowingPlayButton = !_isShowingPlayButton;
     }
-
-    
 }
