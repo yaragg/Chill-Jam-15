@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8169908900584323242, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: CanBeRotated
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275598973893239305, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -84,7 +84,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8169908900584323242, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: CanBeRotated
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275598973893239305, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -154,7 +154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8169908900584323242, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: CanBeRotated
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275598973893239305, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -224,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8169908900584323242, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: CanBeRotated
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275598973893239305, guid: a5dfb95a452683148b47fc1919213dad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -441,7 +441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4545282483420089548, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: CanBeRotated
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -507,7 +507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4545282483420089548, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: CanBeRotated
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -573,7 +573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4545282483420089548, guid: 271678b72fec7814b8039dfbfc83c8a6, type: 3}
       propertyPath: CanBeRotated
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
