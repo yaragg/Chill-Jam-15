@@ -10,3 +10,4 @@ public class DragSignal : ASignal<Vector2, bool> {}; // bool indicates whether t
 public class RotateSignal : ASignal<Vector2> {};
 
 public class RecoverTubeSignal : ASignal<Tube.TubeType>{};
+public class AudioEndedSignal : ASignal<string, string> {};

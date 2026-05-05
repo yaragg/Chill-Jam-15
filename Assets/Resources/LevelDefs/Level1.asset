@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: Assembly-CSharp::LevelDef
   levelPrefab: {fileID: 3483351581694660997, guid: 560d6b19107b2facca257a9a20261fc0, type: 3}
+  levelName: Level 1
   numITubes: 1
   numLTubes: 2
   numTTubes: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level0-2_Placement_Tutorial
   m_EditorClassIdentifier: Assembly-CSharp::LevelDef
   levelPrefab: {fileID: 4663262517111016101, guid: dd513925952c9584cbffd714a6cf8fde, type: 3}
-  numHamsters: 1
+  levelName: 'Level 0-2: Placement Tutorial'
   numITubes: 2
   numLTubes: 1
   numTTubes: 0

@@ -102,9 +102,8 @@ public class Hamster : MonoBehaviour
     {
         // Hamsters are on their own collision layer, so we know without checking that this is a valid collision with another hamster
         _pathTween.Kill();
+        AudioManager.Instance.Play("SFX_Hamster_Collision", "sfx");
         _frameAnimator.Play("collision");
         Signals.Get<HamsterArrivedSignal>().Dispatch(false);
-
-        Utils.LogMessage(this, $"collided with {collision.gameObject.name}");
     }
 }

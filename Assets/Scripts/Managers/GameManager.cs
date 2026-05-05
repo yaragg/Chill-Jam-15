@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using deVoid.Utils;
 using NaughtyAttributes;
 using TMPro;
@@ -15,11 +16,16 @@ public class GameManager : Manager<GameManager>
     public string GameSceneName;
     [Foldout("Internal Config")]
     public string EndSceneName;
+    [Foldout("Internal Config")]
+    public List<string> gameplayAudios;
+    [Foldout("Internal Config")]
+    public GameObject confettiPrefab;
 
     private int _hamstersArrived = 0;
     private int _hamstersExited = 0;
     private LevelOrderDef _levelOrderDef;
     private int _levelIndex;
+    private float _fadeoutDuration = 5f;
 
     protected override IEnumerator Initialize()
     {
@@ -28,6 +34,7 @@ public class GameManager : Manager<GameManager>
         Signals.Get<SimulationStartSignal>().AddListener(HandleSimulationStart);
         Signals.Get<HamsterArrivedSignal>().AddListener(HandleHamsterArrived);
         Signals.Get<SimulationResetSignal>().AddListener(ResetPuzzle);
+        Signals.Get<AudioEndedSignal>().AddListener(HandleAudioFinished);
 
         SceneManager.sceneLoaded += (scene, mode) => HandleSceneChange(scene);
 
@@ -49,7 +56,25 @@ public class GameManager : Manager<GameManager>
         Utils.LogMessage(this, $"scene {scene.name} {GameSceneName}");
         if (scene.name == GameSceneName)
         {
+            List<GameAudioClip> clips = AudioManager.Instance.GetCurrentClipsByTag("bgm");
+            GameAudioClip bgm;
+            if (clips.Count > 0) bgm = clips.First();
+            else bgm = AudioManager.Instance.Play(gameplayAudios.First(), "bgm");
+            bgm.IsLooping = false;
+                bgm.fadeOutSecs = _fadeoutDuration;
             SetupFromLevel();
+        }
+    }
+
+    private void HandleAudioFinished(string clipName, string tag)
+    {
+        if (tag == "bgm")
+        {
+            string previous = gameplayAudios[0];
+            gameplayAudios.RemoveAt(0);
+            gameplayAudios.Add(previous);
+            GameAudioClip bgm = AudioManager.Instance.Play(gameplayAudios.First(), "bgm");
+            bgm.fadeOutSecs = _fadeoutDuration;
         }
     }
 
@@ -57,10 +82,10 @@ public class GameManager : Manager<GameManager>
     {
         SetupGrid();
 
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         ObjectIdentifier levelTitle = ObjectManager.Instance.GetObject("level");
-        if (levelTitle != null) levelTitle.GetComponent<TMP_Text>().text = $"Level: {GetCurrentLevelDef().name}";
-        #endif
+        if (levelTitle != null) levelTitle.GetComponent<TMP_Text>().text = $"Level: {GetCurrentLevelDef().GetName()}";
+#endif
 
         int numFloors = 5;
         // Remove assets and hamsters from unused entrance floors
@@ -127,7 +152,12 @@ public class GameManager : Manager<GameManager>
         Utils.LogMessage(this, $"Simulation end: {success}");
 
         // Add a delay so the player can see the hamster celebrating or getting stuck
-        if (success) Utils.DelayCall(this, 2.2f, StartNextPuzzle);
+        if (success)
+        {
+            Instantiate(confettiPrefab);
+            AudioManager.Instance.Play("SFX_HamsterYay", "sfx");
+            Utils.DelayCall(this, 2.5f, StartNextPuzzle);
+        }
         else Utils.DelayCall(this, 1.5f, () => Signals.Get<SimulationResetSignal>().Dispatch());
         IsSimulationRunning = false;
     }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &689796928939786018
+--- !u!1 &4659489461911929757
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6818412662032588341}
-  - component: {fileID: 5783033732792547023}
-  - component: {fileID: 7457202626890317675}
+  - component: {fileID: 7158803761267391674}
+  - component: {fileID: 7553760338938976018}
+  - component: {fileID: 6282899645042371746}
+  - component: {fileID: 1512059622095938429}
   m_Layer: 0
-  m_Name: PoofSprite
+  m_Name: PoofFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6818412662032588341
+--- !u!4 &7158803761267391674
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689796928939786018}
+  m_GameObject: {fileID: 4659489461911929757}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.90083, y: -1.05057, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7158803761267391674}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5783033732792547023
+--- !u!114 &7553760338938976018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4659489461911929757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f46f7a34c268c0448322f5083158ab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayAudioOnStart
+  clipName: SFX_Poof3
+  clipTag: sfx
+--- !u!212 &6282899645042371746
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689796928939786018}
+  m_GameObject: {fileID: 4659489461911929757}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -92,13 +107,13 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &7457202626890317675
+--- !u!114 &1512059622095938429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689796928939786018}
+  m_GameObject: {fileID: 4659489461911929757}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dab6a4ecdaac9694d8af6e7c0cf45978, type: 3}
@@ -116,35 +131,3 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 2f9259217232160d2953ccf486ba2597, type: 3}
     - {fileID: 21300000, guid: 907c332c37cb29b16ba7cd53e0e9939d, type: 3}
     - {fileID: 21300000, guid: fa10e658554419b0b928a4dd29eb698c, type: 3}
---- !u!1 &4659489461911929757
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7158803761267391674}
-  m_Layer: 0
-  m_Name: PoofFX
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7158803761267391674
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4659489461911929757}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.90083, y: -1.05057, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6818412662032588341}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

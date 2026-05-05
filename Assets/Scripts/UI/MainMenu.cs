@@ -18,6 +18,10 @@ public class MainMenu : MonoBehaviour
         creditsPopup.SetActive(false);
 
         versionText.text = Application.version;
+
+        AudioManager.Instance.Stop("bgm");
+        GameAudioClip bgm = AudioManager.Instance.Play("HoliznaCC0 - Level 1", "bgm");
+        bgm.IsLooping = true;
     }
 
     public void HandleExitButton()

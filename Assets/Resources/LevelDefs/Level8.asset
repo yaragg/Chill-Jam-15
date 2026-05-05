@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Level8
   m_EditorClassIdentifier: Assembly-CSharp::LevelDef
   levelPrefab: {fileID: 778580170604758983, guid: d1b7cb2d2a033a1dcba5434d193dc9c4, type: 3}
+  levelName: Level 8
   numITubes: 6
   numLTubes: 6
   numTTubes: 0

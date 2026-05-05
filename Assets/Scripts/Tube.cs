@@ -149,6 +149,7 @@ public class Tube : MonoBehaviour
 
         if (!_isRotating && CanBeRotated && _tileCollider.OverlapPoint(clickWorldPosition))
         {
+            AudioManager.Instance.Play("SFX_RotatePiece", "sfx");
             _isRotating = true;
             transform.DORotate(new Vector3(0f, 0f, 90f), 0.3f, RotateMode.LocalAxisAdd).SetEase(Ease.InOutQuad).OnComplete(() => _isRotating = false);
         }
@@ -156,6 +157,7 @@ public class Tube : MonoBehaviour
 
     public void StartMove()
     {
+        AudioManager.Instance.Play("SFX_RemovePiece", "sfx");
         TubeManager.Instance.SetCurrentTube(this);
         _isBeingMoved = true;
         TubeRenderer.sortingOrder = 2;
@@ -177,6 +179,7 @@ public class Tube : MonoBehaviour
                 PoofAway();
                 return;
             }
+            AudioManager.Instance.Play("SFX_PlacePiece", "sfx");
             transform.position = (Vector2)snappedPosition;
         }
         else PoofAway();
