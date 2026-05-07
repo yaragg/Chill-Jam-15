@@ -33,6 +33,7 @@ public class AudioManager : Manager<AudioManager>
             GameAudioClip gAudioClip = go.AddComponent<GameAudioClip>();
             gAudioClip.SetClip(clip);
             gAudioClip.Tag = tag;
+            gAudioClip.enabled = true;
             gAudioClip.Play();
             currentClips.Add(gAudioClip);
             return gAudioClip;

@@ -17,13 +17,16 @@ public class GameAudioClip : MonoBehaviour
         AudioSrc = gameObject.AddComponent<AudioSource>();
         AudioSrc.clip = clip;
 
-        gameObject.name = clip.name;
-
         if (tag == "bgm")
         {
             // Ugly game jam haxx until we implement mixers
             AudioSrc.volume = _bgmVolume;
         }
+    }
+
+    void Start()
+    {
+        gameObject.name = clip.name;
     }
 
     public void Play()
