@@ -94,6 +94,11 @@ public class Hamster : MonoBehaviour
         {
             GameObject exclamation = Instantiate(exclamationPrefab, transform.position + Vector3.up * 0.5f, Quaternion.identity);
             Utils.DelayCall(this, 1f, () => Destroy(exclamation));
+            if (tube.IsEntrance)
+            {
+                spriteTransform.rotation = Quaternion.identity;
+                _frameAnimator.Play("idle");
+            }
         }
         Signals.Get<HamsterArrivedSignal>().Dispatch(tube.IsExit);
     }
