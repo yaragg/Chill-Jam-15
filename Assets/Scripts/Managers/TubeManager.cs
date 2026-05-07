@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using NaughtyAttributes;
 using UnityEngine;
 
@@ -122,7 +123,7 @@ public class TubeManager : Manager<TubeManager>
                 }
             }
 
-            if (!hasVisitedAnything && wrongPath.Count == 0)
+            if (!hasVisitedAnything && wrongPath.Count == 0 && start.Connections.Count == 1)
             {
                 wrongPath.Clear();
                 wrongPath.AddRange(visited);
