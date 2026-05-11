@@ -119,6 +119,8 @@ public class Tube : MonoBehaviour
 
     private void HandleTap(Vector2 clickWorldPosition)
     {
+        if (GameManager.Instance.IsSimulationRunning) return;
+
         if (_tileCollider.OverlapPoint(clickWorldPosition))
         {
             if (!CanBeMoved) return;
@@ -129,6 +131,8 @@ public class Tube : MonoBehaviour
 
     private void HandleDrag(Vector2 clickWorldPosition, bool isStarting)
     {
+        if (GameManager.Instance.IsSimulationRunning) return;
+
         if (isStarting)
         {
             if (_tileCollider.OverlapPoint(clickWorldPosition))
@@ -145,6 +149,7 @@ public class Tube : MonoBehaviour
 
     private void HandleRotate(Vector2 clickWorldPosition)
     {
+        if (GameManager.Instance.IsSimulationRunning) return;
         if (TubeManager.Instance.CurrentTube != null && TubeManager.Instance.CurrentTube != this) return;
 
         if (!_isRotating && CanBeRotated && _tileCollider.OverlapPoint(clickWorldPosition))
