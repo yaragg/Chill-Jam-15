@@ -94,17 +94,12 @@ public class InputManager : Manager<InputManager>
     {
         Vector2 mousePosition = _controls.Gameplay.Point.ReadValue<Vector2>();
 
-        // Vector2 worldPosition = GameCamera.ScreenToWorldPoint(mousePosition);
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-        // Instantiate(DebugCircle, new Vector3(worldPosition.x, worldPosition.y, -2.0f), Quaternion.identity);
 
         if (GameCamera != Camera.main)
         {
             Vector2 mainViewportPosition = Camera.main.ScreenToViewportPoint(mousePosition);
             worldPosition = GameCamera.ViewportToWorldPoint(mainViewportPosition);
-
-            Instantiate(DebugCircle, new Vector3(worldPosition.x, worldPosition.y, -2.0f), Quaternion.identity);
         }
 
         return worldPosition;
