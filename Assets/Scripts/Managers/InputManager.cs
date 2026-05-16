@@ -1,8 +1,13 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using deVoid.Utils;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
+using UnityEngine.SceneManagement;
 
 public class InputManager : Manager<InputManager>
 {
@@ -10,6 +15,8 @@ public class InputManager : Manager<InputManager>
     private PlayerControls _controls;
     private bool _isDragging = false;
     private Vector2 _dragStartPosition;
+    private Camera GameCamera;
+    public GameObject DebugCircle;
 
     protected override IEnumerator Initialize()
     {
@@ -21,6 +28,26 @@ public class InputManager : Manager<InputManager>
         _controls.Gameplay.RightClick.performed += HandleRightClickPerformed;
 
         return base.Initialize();
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        GameCamera = Camera.main;
+
+        if (Camera.allCamerasCount > 1)
+        {
+            GameCamera = Camera.allCameras.ToList().Find(cam => cam.tag == "GameCamera");
+        }
     }
 
     private void HandleClickStarted (InputAction.CallbackContext context)
@@ -36,6 +63,7 @@ public class InputManager : Manager<InputManager>
 
         if (context.interaction is TapInteraction)
         {
+            // Signals.Get<TapSignal>().Dispatch(worldPosition);
             Signals.Get<TapSignal>().Dispatch(worldPosition);
         }
         else if (context.interaction is HoldInteraction)
@@ -65,7 +93,20 @@ public class InputManager : Manager<InputManager>
     public Vector2 GetMouseWorldPosition ()
     {
         Vector2 mousePosition = _controls.Gameplay.Point.ReadValue<Vector2>();
+
+        // Vector2 worldPosition = GameCamera.ScreenToWorldPoint(mousePosition);
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        // Instantiate(DebugCircle, new Vector3(worldPosition.x, worldPosition.y, -2.0f), Quaternion.identity);
+
+        if (GameCamera != Camera.main)
+        {
+            Vector2 mainViewportPosition = Camera.main.ScreenToViewportPoint(mousePosition);
+            worldPosition = GameCamera.ViewportToWorldPoint(mainViewportPosition);
+
+            Instantiate(DebugCircle, new Vector3(worldPosition.x, worldPosition.y, -2.0f), Quaternion.identity);
+        }
+
         return worldPosition;
     }
 }
