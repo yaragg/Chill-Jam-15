@@ -16,7 +16,6 @@ public class InputManager : Manager<InputManager>
     private bool _isDragging = false;
     private Vector2 _dragStartPosition;
     private Camera GameCamera;
-    public GameObject DebugCircle;
 
     protected override IEnumerator Initialize()
     {
@@ -93,7 +92,6 @@ public class InputManager : Manager<InputManager>
     public Vector2 GetMouseWorldPosition ()
     {
         Vector2 mousePosition = _controls.Gameplay.Point.ReadValue<Vector2>();
-
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
         if (GameCamera != Camera.main)

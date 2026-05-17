@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68a1efcc008608a4890d642bf3bd54d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputManager
+  DebugCircle: {fileID: 7030942829545748121, guid: 54583116d0b48664783477862af50978, type: 3}
